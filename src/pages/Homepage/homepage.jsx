@@ -1,12 +1,9 @@
+import { Background } from "./HomepageElements";
 
 
 const Homepage = () => {
     return(
-    <div className="App">
-        <header className="App-header">
-          
-        </header>
-    </div>
+        <Background></Background>
     );
 }
 

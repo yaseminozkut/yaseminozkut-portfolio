@@ -17,16 +17,13 @@ export const Navbar = ( {toggle} ) => {
 
           <NavMenu>
             <NavItem>
-              <NavLinks to = '/currentstats'>Current Stats</NavLinks>
+              <NavLinks to = '/about'>About</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to = '/community'>Community</NavLinks>
+              <NavLinks to = '/mycv'>My CV</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to = '/teams'>Teams</NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to = '/referee'>Referees</NavLinks>
+              <NavLinks to = '/contact'>Contact</NavLinks>
             </NavItem>
           </NavMenu>
         </NavbarContainer>

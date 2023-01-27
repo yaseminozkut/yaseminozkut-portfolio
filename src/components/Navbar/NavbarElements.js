@@ -5,7 +5,6 @@ import {Link as LinkR} from 'react-router-dom';
 
 
 export const Nav = styled.nav`
-    position: relative;
     background: #4c00ff;
     height: 4rem;
     /* margin-top: -80px; */
@@ -31,7 +30,7 @@ export const NavbarContainer = styled.div`
     justify-content: space-between;
     height: 5rem;
     z-index: 1;
-    width: 100%;
+
     padding: 0 1.6rem;
     max-width: 100%;
 

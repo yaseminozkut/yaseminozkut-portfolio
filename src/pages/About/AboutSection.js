@@ -13,6 +13,7 @@ const About = () => {
     
         <Background>
             <StyledImg src={require("../../img/Image.png")}></StyledImg>
+            <ResumeButton href={resume} download="Yasemin Ozkut Resume">Download Resume</ResumeButton>
             <StyledContainer>
                 <StyledTitle style={{"margin-bottom": "1rem"}}>Hi, I am <ColorfulText>Yasemin Özkut</ColorfulText></StyledTitle>
                 <StyledTitle style={{"font-size": "2.5vw"}}>and I am a 

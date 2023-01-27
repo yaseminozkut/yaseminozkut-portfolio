@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {Button} from "reactstrap";
 
 export const Background = styled.div`
-    background: #08090b;
+    background: #4400e6;
     display: flex;
     position: relative;
     height: 600px;
@@ -31,7 +31,7 @@ export const StyledTitle = styled.p`
   font-size: 4.5vw;
   font-weight: bold;
 
-  color: white;
+  color: #ececec;
   width: fit-content;
   font-family: 'JetBrains Mono', Roboto,"proxima nova bold","Helvetica Neue",Helvetica,Arial,Sans-serif;
 `;
@@ -40,7 +40,7 @@ export const StyledText = styled.p`
   position: relative;
   font-size: 1rem;
 
-  color: white;
+  color: #ececec;
   font-family: 'JetBrains Mono', Roboto,"proxima nova bold","Helvetica Neue",Helvetica,Arial,Sans-serif;
 `;
 
@@ -50,10 +50,15 @@ export const ResumeButton = styled(Button)`
   top: 90%;
   right: 8%;
   font-size: 1rem;
-  color: white;
+  color: black;
+  font-weight: bold;
   padding-right: 0.5rem;
   padding-left: 0.5rem;
-  background-color: #4c00ff;
+  background-color: #5cbd95;
   text-decoration: none;
   font-family: 'JetBrains Mono', Roboto,"proxima nova bold","Helvetica Neue",Helvetica,Arial,Sans-serif;
+
+  &:hover{
+    background-color: white;
+  }
 `;

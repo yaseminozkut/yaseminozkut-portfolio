@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import {Link as LinkR} from 'react-router-dom';
+import {Link as LinkS} from 'react-scroll';
 
 
 
-
-export const Nav = styled.nav`
+export const Nav = styled.nav`   
     background: #4c00ff;
     height: 4rem;
     /* margin-top: -80px; */
@@ -42,7 +42,7 @@ export const NavLogo = styled(LinkR)`
     cursor: pointer;
 
     font-size: 2.5rem;
-    font-family: Roboto, "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    font-family: 'JetBrains Mono', Roboto, "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
     
     display: flex;
     align-items: center;
@@ -90,7 +90,7 @@ export const NavItem = styled.li`
     height: 3rem;
 `;
 
-export const NavLinks = styled(LinkR)`
+export const NavLinks = styled(LinkS)`
     color: #b3ff00;
     display: flex;
     align-items:center;
@@ -98,7 +98,7 @@ export const NavLinks = styled(LinkR)`
     padding:0 1rem;
     height: 100%;
     cursor: pointer;
-    font-family: Roboto, "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    font-family: 'JetBrains Mono', Roboto, "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
     font-weight: 500;
     font-size: 1.1rem;
     &:hover {

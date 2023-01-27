@@ -1,0 +1,82 @@
+import styled from "styled-components";
+
+export const Background = styled.div`
+    background: #F3a1d8;
+    display: flex;
+    position: relative;
+    height: 800px;
+    z-index: 1;
+`;
+
+export const StyledContainer = styled.div`
+  top: 1rem;
+  left: 5%;
+  width: fit-content;
+  font-family: 'JetBrains Mono', Roboto,"proxima nova bold","Helvetica Neue",Helvetica,Arial,Sans-serif;
+`;
+
+export const StyledTitle = styled.p`
+  position: absolute;
+  font-size: 4vw;
+  font-weight: bold;
+  left: 8rem;
+  top: 6rem;
+  color: #cbfe51;
+  width: fit-content;
+  font-family: 'JetBrains Mono', Roboto,"proxima nova bold","Helvetica Neue",Helvetica,Arial,Sans-serif;
+`;
+
+export const StyledText = styled.p`
+  position: relative;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  width: fit-content;
+  font-family: 'JetBrains Mono', Roboto,"proxima nova bold","Helvetica Neue",Helvetica,Arial,Sans-serif;
+`;
+
+export const Grid = styled.div`
+    position: relative;
+    display: grid;
+    width: 80rem;
+    grid-template-rows: 50px 50px;
+    grid-template-columns: 120px 600px;
+    grid-gap: 5px;
+    left: 8rem;
+`;
+export const Cols = styled.div`
+    position: relative;
+    display: flex;
+    grid-template-rows: 50px 50px;
+    grid-template-columns: 400px 800px;
+    grid-gap: 5px;
+    top: 2rem;
+`;
+export const Cols2 = styled.div`
+    position: relative;
+    display: flex;
+    width: 1100px;
+    grid-gap: 5px;
+    top: 1rem;
+`;
+
+export const StyledCircle = styled.div`
+  border-radius: 30px;
+  background-color: black;
+  width: fit-content;
+  padding-left: 8px;
+  padding-right: 8px;
+  block-size: fit-content;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  font-family: 'JetBrains Mono', Roboto,"proxima nova bold","Helvetica Neue",Helvetica,Arial,Sans-serif;
+`;
+
+export const StyledImg = styled.img`
+  position: absolute;
+  top: 25%;
+  height: 25vw;
+  width: 25vw;
+  right: 1%;
+`;

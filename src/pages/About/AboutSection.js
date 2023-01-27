@@ -3,6 +3,10 @@ import { Background, ResumeButton, StyledContainer, StyledImg, StyledText, Style
 import { Typewriter } from 'react-simple-typewriter';
 import resume from '../../img/Yasemin Ozkut CV.pdf'
 
+function ColorfulText({children}) {
+    return <span style={{color: '#cbfe51'}}>{children}</span>;
+  }
+
 const About = () => {
 
     return(

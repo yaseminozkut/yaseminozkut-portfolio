@@ -4,7 +4,7 @@ import { Typewriter } from 'react-simple-typewriter';
 import resume from '../../img/Yasemin Ozkut CV.pdf'
 
 function ColorfulText({children}) {
-    return <span style={{color: '#cbfe51'}}>{children}</span>;
+    return <span style={{color: '#5cdb95'}}>{children}</span>;
   }
 
 const About = () => {

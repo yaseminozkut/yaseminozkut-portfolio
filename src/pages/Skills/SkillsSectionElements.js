@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Background = styled.div`
-    background: #F3a1d8;
+    background: #ececec;
     display: flex;
     position: relative;
     height: 800px;
@@ -21,7 +21,7 @@ export const StyledTitle = styled.p`
   font-weight: bold;
   left: 8rem;
   top: 6rem;
-  color: #cbfe51;
+  color: #5cbd95;
   width: fit-content;
   font-family: 'JetBrains Mono', Roboto,"proxima nova bold","Helvetica Neue",Helvetica,Arial,Sans-serif;
 `;
@@ -29,7 +29,7 @@ export const StyledTitle = styled.p`
 export const StyledText = styled.p`
   position: relative;
   font-size: 1rem;
-  color: white;
+  color: black;
   font-weight: bold;
   width: fit-content;
   font-family: 'JetBrains Mono', Roboto,"proxima nova bold","Helvetica Neue",Helvetica,Arial,Sans-serif;

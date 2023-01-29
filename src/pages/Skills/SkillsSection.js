@@ -10,7 +10,7 @@ const Skills = () => {
     
         <Background>
             <StyledContainer>
-            <img src={wave} alt='waves' width="1600"></img>
+            <img src={wave} alt='waves'  flex="1"></img>
                 <StyledTitle>Skills</StyledTitle>
                 <Grid>
                     <StyledText size='md'>Programming Languages:</StyledText>

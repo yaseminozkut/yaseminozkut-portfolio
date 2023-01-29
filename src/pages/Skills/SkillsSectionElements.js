@@ -11,7 +11,7 @@ export const Background = styled.div`
 export const StyledContainer = styled.div`
   top: 1rem;
   left: 5%;
-  width: fit-content;
+  width: 100%;
   font-family: 'JetBrains Mono', Roboto,"proxima nova bold","Helvetica Neue",Helvetica,Arial,Sans-serif;
 `;
 

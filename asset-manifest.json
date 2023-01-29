@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/yaseminozkut-portfolio/static/css/main.b123ee45.css",
-    "main.js": "/yaseminozkut-portfolio/static/js/main.5dd175da.js",
-    "static/media/Yasemin Ozkut CV.pdf": "/yaseminozkut-portfolio/static/media/Yasemin Ozkut CV.5f11dd10c78552f67a06.pdf",
-    "static/media/Image.png": "/yaseminozkut-portfolio/static/media/Image.989b3cbbd86f20e5738e.png",
-    "index.html": "/yaseminozkut-portfolio/index.html",
-    "static/media/wave.svg": "/yaseminozkut-portfolio/static/media/wave.a8d75efe38dae78b447263a5a55caef8.svg",
-    "main.b123ee45.css.map": "/yaseminozkut-portfolio/static/css/main.b123ee45.css.map",
-    "main.5dd175da.js.map": "/yaseminozkut-portfolio/static/js/main.5dd175da.js.map"
+    "main.css": "/static/css/main.b123ee45.css",
+    "main.js": "/static/js/main.afca9dd4.js",
+    "static/media/Yasemin Ozkut CV.pdf": "/static/media/Yasemin Ozkut CV.5f11dd10c78552f67a06.pdf",
+    "static/media/Image.png": "/static/media/Image.989b3cbbd86f20e5738e.png",
+    "index.html": "/index.html",
+    "static/media/wave.svg": "/static/media/wave.a8d75efe38dae78b447263a5a55caef8.svg",
+    "main.b123ee45.css.map": "/static/css/main.b123ee45.css.map",
+    "main.afca9dd4.js.map": "/static/js/main.afca9dd4.js.map"
   },
   "entrypoints": [
     "static/css/main.b123ee45.css",
-    "static/js/main.5dd175da.js"
+    "static/js/main.afca9dd4.js"
   ]
 }

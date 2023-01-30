@@ -6,6 +6,8 @@ import { Navbar } from "../../components/Navbar/Navbar";
 import About from "../About/AboutSection";
 import Skills from "../Skills/SkillsSection";
 import Education from "../Education/EducationSection";
+import Experience from "../Experience/ExperienceSection";
+import Projects from "../Projects/ProjectsSection";
 
 function ColorfulText({children}) {
     return <span style={{color: '#cbfe51'}}>{children}</span>;
@@ -24,6 +26,8 @@ const Homepage = () => {
             <About/>
             <Skills/>
             <Education/>
+            <Experience/>
+            <Projects/>
 
         </>
         /*

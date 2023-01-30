@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const Background = styled.nav`
-    background-color: #08090b;
+    background: #ececec;
+    color: #ececec;
     position: absolute;
     overflow: scroll;
     top: 0;

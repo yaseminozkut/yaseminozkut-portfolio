@@ -107,7 +107,7 @@ export const NavLinks = styled(LinkS)`
     }
 
     &.active{
-        border-bottom: 3px solid red;
+        border-bottom: 3px solid #5cbd95;
     }
 `;
 

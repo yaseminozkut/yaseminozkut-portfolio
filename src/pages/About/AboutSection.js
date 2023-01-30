@@ -29,7 +29,7 @@ const About = () => {
                             />
                     </ColorfulText>
                 </StyledTitle>
-                <StyledText>I am a senior Computer Science and Engineering student at Sabancı University.</StyledText>
+                <StyledText>I am a senior Computer Science and Engineering student at Sabancı University. I am passionate about design and software engineering. I am a fast learner and I am eager to learn new things and take challenges. I love to work both in a team and by myself, so I can easly adapt in both situations. </StyledText>
             </StyledContainer>
         </Background>
     );

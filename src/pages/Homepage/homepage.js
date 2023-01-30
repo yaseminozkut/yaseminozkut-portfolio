@@ -8,6 +8,7 @@ import Skills from "../Skills/SkillsSection";
 import Education from "../Education/EducationSection";
 import Experience from "../Experience/ExperienceSection";
 import Projects from "../Projects/ProjectsSection";
+import Contact from "../Contact/ContactSection";
 
 function ColorfulText({children}) {
     return <span style={{color: '#cbfe51'}}>{children}</span>;
@@ -28,6 +29,7 @@ const Homepage = () => {
             <Education/>
             <Experience/>
             <Projects/>
+            <Contact/>
 
         </>
         /*

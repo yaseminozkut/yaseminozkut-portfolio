@@ -26,7 +26,7 @@ const Wrapper = styled.section`
     position: absolute;
     top: 0;
     left: 10px;
-    height: ${(props) => props.lineHeight + 20}px;
+    height: ${(props) => props.lineHeight}px;
     width: 2px;
     background: #5cbd95;
   }
@@ -39,8 +39,7 @@ function VerticalLineWrapper({ className, children }) {
   useLayoutEffect(() => {
     const handleResize = () => {
       setLineHeight(
-        wrapperHeight.current.clientHeight -
-          wrapperHeight.current.lastChild.clientHeight
+        wrapperHeight.current.clientHeight
       );
     };
 

@@ -103,11 +103,12 @@ export const NavLinks = styled(LinkS)`
     font-size: 1.1rem;
     &:hover {
         color: #fff;
-        border-bottom: 3px solid white;
+        border-bottom: 4px solid white;
     }
 
     &.active{
-        border-bottom: 3px solid #5cbd95;
+        border-bottom: 4px solid #5cbd95;
+        color: #fff;
     }
 `;
 

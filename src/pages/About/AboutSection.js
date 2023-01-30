@@ -1,7 +1,8 @@
 import React from 'react';
-import { Background, ResumeButton, StyledContainer, StyledImg, StyledText, StyledTitle } from "./AboutSectionElements";
+import { Background, IconLinks, ResumeButton, StyledContainer, StyledImg, StyledText, StyledTitle, IconLink} from "./AboutSectionElements";
 import { Typewriter } from 'react-simple-typewriter';
-import resume from '../../img/Yasemin Ozkut CV.pdf'
+import resume from '../../img/Yasemin Ozkut CV.pdf';
+import {FaGithub, FaLinkedin, FaInstagram} from 'react-icons/fa';
 
 function ColorfulText({children}) {
     return <span style={{color: '#5cdb95'}}>{children}</span>;
@@ -14,6 +15,17 @@ const About = () => {
         <Background>
             <StyledImg src={require("../../img/Image.png")}></StyledImg>
             <ResumeButton href={resume} download="Yasemin Ozkut Resume">Download Resume</ResumeButton>
+            <IconLinks>
+                <IconLink> 
+                    <a href='https://github.com/yaseminozkut' target="_blank"><FaGithub style={{"color": "#ececec", "size": "lg"}}></FaGithub></a>
+                </IconLink>
+                <IconLink> 
+                    <a href='https://www.linkedin.com/in/yaseminozkut/' target="_blank"><FaLinkedin style={{"color": "#ececec", "size": "lg"}}></FaLinkedin></a>
+                </IconLink>
+                <IconLink> 
+                    <a href='https://www.instagram.com/yaseminozkut/' target="_blank"><FaInstagram style={{"color": "#ececec", "size": "lg"}}></FaInstagram></a>
+                </IconLink>
+            </IconLinks>
             <StyledContainer>
                 <StyledTitle style={{"margin-bottom": "1rem"}}>Hi, I am <ColorfulText>Yasemin Özkut</ColorfulText></StyledTitle>
                 <StyledTitle style={{"font-size": "2.5vw"}}>and I am a 

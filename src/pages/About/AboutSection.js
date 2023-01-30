@@ -12,7 +12,7 @@ const About = () => {
 
     return(
     
-        <Background>
+        <Background id='about'>
             <StyledImg src={require("../../img/Image.png")}></StyledImg>
             <ResumeButton href={resume} download="Yasemin Ozkut Resume">Download Resume</ResumeButton>
             <IconLinks>

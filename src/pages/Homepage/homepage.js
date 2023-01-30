@@ -23,8 +23,8 @@ const Homepage = () => {
         <>
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle} />
-            <About/>
-            <Skills/>
+            <About id='about'/>
+            <Skills id='skills'/>
             <Education/>
             <Experience/>
             <Projects/>

@@ -10,7 +10,7 @@ import VerticalLineWrapper from "../../components/Timeline/VerticalLineWrapper";
 
 const Education = () => {
   return (
-    <Background>
+    <Background id="education">
       <StyledContainer>
         <StyledTitle>Education</StyledTitle>
         <TimelineContainer>

@@ -12,7 +12,7 @@ import {FaGithub} from 'react-icons/fa';
 
 const Projects = () => {
   return (
-    <Background>
+    <Background id="projects">
       <StyledContainer>
         <StyledTitle>Project Highlights</StyledTitle>
         <TimelineContainer>

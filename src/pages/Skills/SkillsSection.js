@@ -8,7 +8,7 @@ const Skills = () => {
 
     return(
     
-        <Background>
+        <Background id='skills'>
             <StyledContainer>
             <img src={wave} alt='waves'  flex="1"></img>
                 <StyledTitle>Skills</StyledTitle>

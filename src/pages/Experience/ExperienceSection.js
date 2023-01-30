@@ -10,7 +10,7 @@ import VerticalLineWrapper from "../../components/Timeline/VerticalLineWrapper";
 
 const Experience = () => {
   return (
-    <Background>
+    <Background id="experience">
       <StyledContainer>
         <StyledTitle>Experience</StyledTitle>
         <TimelineContainer>

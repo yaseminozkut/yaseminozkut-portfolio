@@ -17,7 +17,7 @@ export const StyledContainer = styled.div`
 
 export const StyledTitle = styled.p`
   position: absolute;
-  font-size: 4vw;
+  font-size: 4rem;
   font-weight: bold;
   left: 8rem;
   top: 6rem;

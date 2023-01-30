@@ -4,12 +4,12 @@ export const Background = styled.div`
     background: #ececec;
     display: flex;
     position: relative;
-    height: 700px;
+    height: 600px;
     z-index: 1;
 `;
 
 export const StyledContainer = styled.div`
-  top: -2rem;
+  top: -3rem;
   left: 5%;
   width: 100%;
   font-family: 'JetBrains Mono', Roboto,"proxima nova bold","Helvetica Neue",Helvetica,Arial,Sans-serif;
@@ -25,7 +25,7 @@ export const TimelineContainer = styled.div`
 
 export const StyledTitle = styled.p`
   position: absolute;
-  font-size: 4vw;
+  font-size: 4rem;
   font-weight: bold;
   left: 8rem;
   top: 0rem;

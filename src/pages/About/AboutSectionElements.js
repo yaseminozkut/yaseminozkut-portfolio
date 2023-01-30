@@ -28,7 +28,7 @@ export const StyledContainer = styled.div`
 
 export const StyledTitle = styled.p`
   position: relative;
-  font-size: 4.5vw;
+  font-size: 4.5rem;
   font-weight: bold;
 
   color: #ececec;

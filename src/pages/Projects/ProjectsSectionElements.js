@@ -4,7 +4,7 @@ export const Background = styled.div`
     background: #ececec;
     display: flex;
     position: relative;
-    height: 1200px;
+    height: 1400px;
     z-index: 1;
 `;
 
@@ -87,4 +87,19 @@ export const StyledImg = styled.img`
   height: 25vw;
   width: 25vw;
   right: 1%;
+`;
+
+export const IconLink = styled.div`
+  position: relative;
+
+  height:2rem;
+  width: 2rem;
+  text-decoration: none;
+  font-size: 30px;
+
+  &:hover{
+    {
+      transform: translateY(-2px)
+    }
+  }
 `;

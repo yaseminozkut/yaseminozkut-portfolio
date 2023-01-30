@@ -23,29 +23,29 @@ const Skills = () => {
                 </Grid>
                 <Grid>
                     <StyledText>Front-End:</StyledText>
-                    <Cols2>
+                    <Cols>
                         <StyledCircle>React.JS</StyledCircle>
                         <StyledCircle>Flutter</StyledCircle>
-                    </Cols2>
+                    </Cols>
                 </Grid>
                 <Grid>
                     <StyledText>Back-End:</StyledText>
-                    <Cols2>
+                    <Cols>
                         <StyledCircle>Node.JS</StyledCircle>
                         <StyledCircle>Express.JS</StyledCircle>
-                    </Cols2>
+                    </Cols>
                 </Grid>
                 <Grid>
                     <StyledText>Database:</StyledText>
-                    <Cols2>
+                    <Cols>
                         <StyledCircle>MongoDB</StyledCircle>
                         <StyledCircle>SQL</StyledCircle>
                         <StyledCircle>Firebase</StyledCircle>
-                    </Cols2>
+                    </Cols>
                 </Grid>
                 <Grid>
                     <StyledText>General:</StyledText>
-                    <Cols2>
+                    <Cols style={{width: "90%"}}>
                         <StyledCircle>Git</StyledCircle>
                         <StyledCircle>Postman</StyledCircle>
                         <StyledCircle>Data Structures</StyledCircle>
@@ -53,7 +53,7 @@ const Skills = () => {
                         <StyledCircle>OOP</StyledCircle>
                         <StyledCircle>Web Developement</StyledCircle>
                         <StyledCircle>Socket Programming</StyledCircle>
-                    </Cols2>
+                    </Cols>
                 </Grid>
             </StyledContainer>
         </Background>

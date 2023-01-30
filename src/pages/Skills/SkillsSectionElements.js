@@ -38,9 +38,9 @@ export const StyledText = styled.p`
 export const Grid = styled.div`
     position: relative;
     display: grid;
-    width: 80rem;
+    width: 80%;
     grid-template-rows: 50px 50px;
-    grid-template-columns: 120px 600px;
+    grid-template-columns: 120px 1000px;
     grid-gap: 5px;
     left: 8rem;
 `;

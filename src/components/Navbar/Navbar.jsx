@@ -1,14 +1,19 @@
 import React from 'react'
 import {FaBars} from 'react-icons/fa'
 import { MobileIcon, Nav, NavbarContainer, NavLogo, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink } from './NavbarElements'
+import { animateScroll as scroll} from 'react-scroll'
 
 export const Navbar = ( {toggle} ) => {
     const name = "<yase>"
+
+    const toggleHome = () =>{
+      scroll.scrollToTop()
+    }
   return (
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to = '/'>
+          <NavLogo to = '/' onClick={toggleHome}>
             {name}
           </NavLogo>
           <MobileIcon onClick={toggle}>
@@ -17,19 +22,19 @@ export const Navbar = ( {toggle} ) => {
 
           <NavMenu>
             <NavItem>
-              <NavLinks to = '/about'>About</NavLinks>
+              <NavLinks to = 'about' smooth={true} duration={500} spy={true} exact='true' offset={-80} >About</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to = '/skills'>Skills</NavLinks>
+              <NavLinks to = 'skills' smooth={true} duration={500} spy={true} exact='true' offset={-60}>Skills</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to = '/education'>Education</NavLinks>
+              <NavLinks to = 'education' smooth={true} duration={500} spy={true} exact='true' offset={-60}>Education</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to = '/experience'>Experience</NavLinks>
+              <NavLinks to = 'experience' smooth={true} duration={500} spy={true} exact='true' offset={-60}>Experience</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to = '/projects'>Projects</NavLinks>
+              <NavLinks to = 'projects' smooth={true} duration={500} spy={true} exact='true' offset={-60}>Projects</NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks to = '/contact'>Contact</NavLinks>

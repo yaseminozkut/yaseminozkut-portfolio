@@ -13,6 +13,7 @@ export const StyledContainer = styled.div`
   left: 5%;
   width: 100%;
   font-family: 'JetBrains Mono', Roboto,"proxima nova bold","Helvetica Neue",Helvetica,Arial,Sans-serif;
+  display: inline-block;
 `;
 
 export const StyledTitle = styled.p`
@@ -71,6 +72,11 @@ export const StyledCircle = styled.div`
   color: white;
   font-weight: bold;
   font-family: 'JetBrains Mono', Roboto,"proxima nova bold","Helvetica Neue",Helvetica,Arial,Sans-serif;
+  &:hover{
+    {
+      transform: translateY(-4px)
+    }
+  }
 `;
 
 export const StyledImg = styled.img`

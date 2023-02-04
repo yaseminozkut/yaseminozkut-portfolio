@@ -2,7 +2,7 @@ import React from 'react';
 import { Background, StyledCircle, StyledContainer, StyledImg, StyledText, StyledTitle, Grid, Cols, Cols2} from "./SkillsSectionElements";
 import { Typewriter } from 'react-simple-typewriter';
 import wave from "../../img/wave.svg";
-
+import {ReactComponent as ReactLogo} from '../../img/wave.svg';
 
 const Skills = () => {
 
@@ -10,7 +10,7 @@ const Skills = () => {
     
         <Background id='skills'>
             <StyledContainer>
-            <img src={wave} alt='waves'  flex="1"></img>
+            <ReactLogo flex="1"></ReactLogo>
                 <StyledTitle>Skills</StyledTitle>
                 <Grid>
                     <StyledText size='md'>Programming Languages:</StyledText>

@@ -1,12 +1,6 @@
 import React from 'react';
-import { Background, IconLinks, ResumeButton, StyledContainer, StyledImg, StyledText, StyledTitle, IconLink} from "./ContactSectionElements";
-import { Typewriter } from 'react-simple-typewriter';
-import resume from '../../img/Yasemin Ozkut CV.pdf';
+import { Background, StyledContainer, StyledImg, StyledText, StyledTitle} from "./ContactSectionElements";
 import {FaRegEnvelope} from 'react-icons/fa';
-
-function ColorfulText({children}) {
-    return <span style={{color: '#5cdb95'}}>{children}</span>;
-  }
 
 const Contact = () => {
 

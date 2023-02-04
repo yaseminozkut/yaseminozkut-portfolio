@@ -1,7 +1,7 @@
 import React from 'react';
 import { Background, IconLinks, ResumeButton, StyledContainer, StyledImg, StyledText, StyledTitle, IconLink} from "./AboutSectionElements";
 import { Typewriter } from 'react-simple-typewriter';
-import resume from '../../img/Yasemin Ozkut CV.pdf';
+import resume from '../../img/Yasemin Ozkut Resume.pdf';
 import {FaGithub, FaLinkedin, FaInstagram} from 'react-icons/fa';
 
 function ColorfulText({children}) {

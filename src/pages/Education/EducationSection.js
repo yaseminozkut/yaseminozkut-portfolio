@@ -16,16 +16,18 @@ const Education = () => {
         <TimelineContainer>
           <VerticalLineWrapper>
             <VerticalLineContent position="left">
-              <strong style={{"font-size": "1.5rem"}}>Sabancı University</strong>
-              <p style={{"font-size": "0.7rem", "fontFamily": "Sans-serif", "color": "grey"}}>3.58/4.00 ● 2019 - Expected February 2024 ● Istanbul, Turkey</p>
-              <p style={{"fontFamily": "Sans-serif", color: "#555", "font-size": "1.2rem"}}>B.S in Computer Science and Engineering, Faculty of Engineering and Natural Sciences (Senior)</p>
-              <p style={{"font-size": "1rem", "padding-left": "2rem", "fontFamily": "Sans-serif", color: "#555"}}> <strong>Course Highlights:</strong> Introduction to programming with Python, Advanced Programming with C++, Data Science, Database Systems, Mobile Application Development, Data Structures, Probability, Statistical Modelling, Discrete Mathematics, Software Engineering, Computer Networks, Algorithms, Machine Learning</p>
-              <p style={{"fontFamily": "Sans-serif", color: "#555", "font-size": "1.2rem"}}>Minor in Business Analytics, School of Management</p>
-              <p style={{"font-size": "1rem", "padding-left": "2rem", "fontFamily": "Sans-serif", color: "#555"}}> <strong>Course Highlights:</strong> Introduction to Data Analysis and Research in Business, Introduction to Business Analytics, Optimization Modeling in Business Analytics</p>
+              <strong style={{"font-size": "1.5rem", color: "#555"}}>The Ohio State University</strong>
+              <p style={{"font-size": "0.7rem", "fontFamily": "Roboto", "color": "grey"}}>August 2024 - Expected May 2026 ● Columbus, OH, USA</p>
+              <p style={{"fontFamily": "Roboto", color: "#555", "font-size": "1.2rem"}}>M.S in Electrical and Computer Engineering (Second Year)</p>
+              <p style={{"font-size": "1rem", "padding-left": "2rem", "fontFamily": "Roboto", color: "#555"}}> <strong>Course Highlights:</strong> High Performance Deep/Machine Learning, Photogrammetry, Photogrammetric Computer Vision, Machine Learning in Remote Sensing, AI in Medical Imaging, Reinforcement Learning</p>
             </VerticalLineContent>
-            <VerticalLineContent position="right">
-              <strong style={{"font-size": "1.5rem"}}>Sev American College</strong>
-              <p style={{"font-size": "0.7rem", "fontFamily": "Sans-serif", "color": "grey"}}>2014 - 2019 ● Istanbul, Turkey</p>
+            <VerticalLineContent position="left">
+              <strong style={{"font-size": "1.5rem", color: "#555"}}>Sabancı University</strong>
+              <p style={{"font-size": "0.7rem", "fontFamily": "Roboto", "color": "grey"}}>September 2019 - February 2024 ● Istanbul, Turkey</p>
+              <p style={{"fontFamily": "Roboto", color: "#555", "font-size": "1.2rem"}}>B.S in Computer Science and Engineering</p>
+              <p style={{"font-size": "1rem", "padding-left": "2rem", "fontFamily": "Roboto", color: "#555"}}> <strong>Course Highlights:</strong> Introduction to programming with Python, Advanced Programming with C++, Data Science, Database Systems, Mobile Application Development, Data Structures, Probability, Statistical Modelling, Discrete Mathematics, Software Engineering, Computer Networks, Algorithms, Machine Learning</p>
+              <p style={{"fontFamily": "Roboto", color: "#555", "font-size": "1.2rem"}}>Minor in Business Analytics, School of Management</p>
+              <p style={{"font-size": "1rem", "padding-left": "2rem", "fontFamily": "Roboto", color: "#555"}}> <strong>Course Highlights:</strong> Introduction to Data Analysis and Research in Business, Introduction to Business Analytics, Optimization Modeling in Business Analytics</p>
             </VerticalLineContent>
           </VerticalLineWrapper>
         </TimelineContainer>

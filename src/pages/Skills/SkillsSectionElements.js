@@ -47,11 +47,10 @@ export const StyledTitle = styled.p`
 
 `;
 
-
 export const StyledText = styled.p`
   position: relative;
   font-size: 1rem;
-  color: black;
+  color: #555;
   font-weight: 550;
   width: fit-content;
   font-family: Verdana, Helvetica, Arial, Sans-serif;
@@ -76,8 +75,6 @@ export const Grid = styled.div`
   }
 `;
 
-
-
 export const Cols = styled.div`
   position: relative;
   display: flex;
@@ -87,22 +84,23 @@ export const Cols = styled.div`
   margin-top: 16px;
 `;
 
-
-
 export const StyledCircle = styled.div`
   border-radius: 30px;
-  background-color: black;
+  border: 1px solid #d1d5db;
+  color: #555;
+  background:transparent;   // soft light gray for pill effect
   width: fit-content;
-  padding-left: 8px;
-  padding-right: 8px;
-  block-size: fit-content;
-  font-size: 1rem;
-  color: white;
+  padding: 0.35em 1.2em;
+  font-size: 0.8rem;
   font-weight: 550;
   font-family: Verdana, Helvetica, Arial, Sans-serif;
-  &:hover{
-    {
-      transform: translateY(-4px)
-    }
+  box-shadow: 0 1px 8px rgba(0,0,0,0.07);   // <--- subtle floating shadow
+  transition: box-shadow 0.18s, transform 0.15s;
+
+  &:hover {
+    transform: translateY(-4px) scale(1.04);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15); // <--- more "lift" on hover
+    border: 1.5px solid rgb(169, 169, 172);            // optional: accent border on hover
   }
 `;
+

@@ -1,7 +1,5 @@
 import React from 'react';
-import { Background, StyledCircle, StyledContainer, StyledImg, StyledText, StyledTitle, Grid, Cols, Cols2} from "./SkillsSectionElements";
-import { Typewriter } from 'react-simple-typewriter';
-import wave from "../../img/wave.svg";
+import { Background, StyledCircle, StyledContainer, StyledText, StyledTitle, Grid, Cols, Cols2} from "./SkillsSectionElements";
 import {ReactComponent as ReactLogo} from '../../img/wave.svg';
 
 const Skills = () => {

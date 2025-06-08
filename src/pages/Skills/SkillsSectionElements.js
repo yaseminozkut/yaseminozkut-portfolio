@@ -12,7 +12,6 @@ export const StyledContainer = styled.div`
   top: 1rem;
   left: 5%;
   width: 100%;
-  font-family: 'JetBrains Mono', Roboto,"proxima nova bold","Helvetica Neue",Helvetica,Arial,Sans-serif;
   display: inline-block;
 `;
 
@@ -24,16 +23,16 @@ export const StyledTitle = styled.p`
   top: 6rem;
   color: #5cbd95;
   width: fit-content;
-  font-family: 'JetBrains Mono', Roboto,"proxima nova bold","Helvetica Neue",Helvetica,Arial,Sans-serif;
+  font-family: 'JetBrains Mono', Verdana, Helvetica, Arial, Sans-serif;
 `;
 
 export const StyledText = styled.p`
   position: relative;
   font-size: 1rem;
   color: black;
-  font-weight: bold;
+  font-weight: 550;
   width: fit-content;
-  font-family: 'JetBrains Mono', Roboto,"proxima nova bold","Helvetica Neue",Helvetica,Arial,Sans-serif;
+  font-family: Verdana, Helvetica, Arial, Sans-serif;
 `;
 
 export const Grid = styled.div`
@@ -44,6 +43,7 @@ export const Grid = styled.div`
     grid-template-columns: 120px 1000px;
     grid-gap: 5px;
     left: 8rem;
+    align-items: start;
 `;
 export const Cols = styled.div`
     position: relative;
@@ -51,14 +51,7 @@ export const Cols = styled.div`
     grid-template-rows: 50px 50px;
     grid-template-columns: 400px 800px;
     grid-gap: 5px;
-    top: 2rem;
-`;
-export const Cols2 = styled.div`
-    position: relative;
-    display: flex;
-    width: 1100px;
-    grid-gap: 5px;
-    top: 1rem;
+    margin-top: 16px;
 `;
 
 export const StyledCircle = styled.div`
@@ -70,19 +63,11 @@ export const StyledCircle = styled.div`
   block-size: fit-content;
   font-size: 1rem;
   color: white;
-  font-weight: bold;
-  font-family: 'JetBrains Mono', Roboto,"proxima nova bold","Helvetica Neue",Helvetica,Arial,Sans-serif;
+  font-weight: 550;
+  font-family: Verdana, Helvetica, Arial, Sans-serif;
   &:hover{
     {
       transform: translateY(-4px)
     }
   }
-`;
-
-export const StyledImg = styled.img`
-  position: absolute;
-  top: 25%;
-  height: 25vw;
-  width: 25vw;
-  right: 1%;
 `;

@@ -4,7 +4,7 @@ export const Background = styled.div`
     background: #ececec;
     display: flex;
     position: relative;
-    height: 600px;
+    height: 800px;
     z-index: 1;
 `;
 
@@ -12,79 +12,34 @@ export const StyledContainer = styled.div`
   top: -3rem;
   left: 5%;
   width: 100%;
-  font-family: 'JetBrains Mono', Roboto,"proxima nova bold","Helvetica Neue",Helvetica,Arial,Sans-serif;
+  font-family: Roboto, Verdana, Helvetica, Arial, Sans-serif;
 `;
 
 export const TimelineContainer = styled.div`
-  top: 20%;
   position: relative;
-  left: 8%;
+  left: 5%;
   width: 80%;
-  font-family: 'JetBrains Mono', Roboto,"proxima nova bold","Helvetica Neue",Helvetica,Arial,Sans-serif;
+  font-family: Roboto, Verdana, Helvetica, Arial, Sans-serif;
 `;
 
 export const StyledTitle = styled.p`
-  position: absolute;
-  font-size: 4rem;
+  font-size: clamp(1.1rem, 5vw, 3rem);
   font-weight: bold;
-  left: 8rem;
-  top: 0rem;
-  color: #5cbd95;
+  color: #5cbd95;;
+  margin-bottom: 0;
+  margin-top: 2rem;
+  padding-left: 5vw;
   width: fit-content;
-  font-family: 'JetBrains Mono', Roboto,"proxima nova bold","Helvetica Neue",Helvetica,Arial,Sans-serif;
-`;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+  font-family: 'JetBrains Mono', Verdana, Helvetica, Arial, Sans-serif;
+  max-width: 100%;
 
-export const StyledText = styled.p`
-  position: relative;
-  font-size: 1rem;
-  color: black;
-  font-weight: bold;
-  width: fit-content;
-  font-family: 'JetBrains Mono', Roboto,"proxima nova bold","Helvetica Neue",Helvetica,Arial,Sans-serif;
-`;
+  @media (max-width: 900px) {
+    text-align: left;
+    font-size: clamp(1.1rem, 7vw, 2.5rem);
+  }
 
-export const Grid = styled.div`
-    position: relative;
-    display: grid;
-    width: 80rem;
-    grid-template-rows: 50px 50px;
-    grid-template-columns: 120px 600px;
-    grid-gap: 5px;
-    left: 8rem;
-`;
-export const Cols = styled.div`
-    position: relative;
-    display: flex;
-    grid-template-rows: 50px 50px;
-    grid-template-columns: 400px 800px;
-    grid-gap: 5px;
-    top: 2rem;
-`;
-export const Cols2 = styled.div`
-    position: relative;
-    display: flex;
-    width: 1100px;
-    grid-gap: 5px;
-    top: 1rem;
-`;
-
-export const StyledCircle = styled.div`
-  border-radius: 30px;
-  background-color: black;
-  width: fit-content;
-  padding-left: 8px;
-  padding-right: 8px;
-  block-size: fit-content;
-  font-size: 1rem;
-  color: white;
-  font-weight: bold;
-  font-family: 'JetBrains Mono', Roboto,"proxima nova bold","Helvetica Neue",Helvetica,Arial,Sans-serif;
-`;
-
-export const StyledImg = styled.img`
-  position: absolute;
-  top: 25%;
-  height: 25vw;
-  width: 25vw;
-  right: 1%;
 `;

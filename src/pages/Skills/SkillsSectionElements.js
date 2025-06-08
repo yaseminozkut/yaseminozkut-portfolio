@@ -6,7 +6,7 @@ export const Background = styled.div`
     position: relative;
     width: 100vw;      // Add this line
     max-width: 100%;   // Just in case
-    height: 600px;
+    height: 800px;
     z-index: 1;
     overflow-x: hidden; /* <--- prevents unwanted horizontal scroll! */
     /* For very large screens, make section shorter */

@@ -13,44 +13,78 @@ const Skills = () => {
                 <Grid>
                     <StyledText size='md'>Programming Languages:</StyledText>
                     <Cols>
-                        <StyledCircle>C++</StyledCircle>
                         <StyledCircle>Python</StyledCircle>
+                        <StyledCircle>C++</StyledCircle>
+                        <StyledCircle>C</StyledCircle>
                         <StyledCircle>C#</StyledCircle>
-                        <StyledCircle>Dart</StyledCircle>
+                        {/* ... */}
                     </Cols>
                 </Grid>
                 <Grid>
-                    <StyledText>Front End:</StyledText>
+                    <StyledText>AI/ML Frameworks & Libraries:</StyledText>
                     <Cols>
-                        <StyledCircle>React.JS</StyledCircle>
+                        <StyledCircle>PyTorch</StyledCircle>
+                        <StyledCircle>CUDA</StyledCircle>
+                        <StyledCircle>YOLO</StyledCircle>
+                        <StyledCircle>Keras-OCR</StyledCircle>
+                        <StyledCircle>OpenCV</StyledCircle>
+                        <StyledCircle>Hugging Face</StyledCircle>
+                        <StyledCircle>Pandas</StyledCircle>
+                        <StyledCircle>NumPy</StyledCircle>
+                        <StyledCircle>Scikit-learn</StyledCircle>
+                        <StyledCircle>Matplotlib</StyledCircle>
+                    </Cols>
+                </Grid>
+                <Grid>
+                    <StyledText>Front-end:</StyledText>
+                    <Cols>
+                        <StyledCircle>React.js</StyledCircle>
+                        <StyledCircle>CSS</StyledCircle>
                         <StyledCircle>Flutter</StyledCircle>
                     </Cols>
                 </Grid>
                 <Grid>
-                    <StyledText>Back End:</StyledText>
+                    <StyledText>Back-end & Databases:</StyledText>
                     <Cols>
-                        <StyledCircle>Node.JS</StyledCircle>
-                        <StyledCircle>Express.JS</StyledCircle>
-                    </Cols>
-                </Grid>
-                <Grid>
-                    <StyledText>Database:</StyledText>
-                    <Cols>
+                        <StyledCircle>Node.js</StyledCircle>
+                        <StyledCircle>Express.js</StyledCircle>
                         <StyledCircle>MongoDB</StyledCircle>
                         <StyledCircle>SQL</StyledCircle>
                         <StyledCircle>Firebase</StyledCircle>
                     </Cols>
                 </Grid>
                 <Grid>
-                    <StyledText>General:</StyledText>
+                    <StyledText>Developer Tools:</StyledText>
                     <Cols style={{width: "90%"}}>
                         <StyledCircle>Git</StyledCircle>
+                        <StyledCircle>SLURM</StyledCircle>
+                        <StyledCircle>Linux (CLI)</StyledCircle>
+                        <StyledCircle>LaTeX</StyledCircle>
+                        <StyledCircle>Gephi</StyledCircle>
+                        <StyledCircle>Unity</StyledCircle>
                         <StyledCircle>Postman</StyledCircle>
+                    </Cols>
+                </Grid>
+                <Grid>
+                    <StyledText>Techniques:</StyledText>
+                    <Cols>
+                        <StyledCircle>Machine Learning</StyledCircle>
+                        <StyledCircle>Artificial Intelligence</StyledCircle>
+                        <StyledCircle>Deep Learning</StyledCircle>
+                        <StyledCircle>Distributed Training</StyledCircle>
+                        <StyledCircle>Multi-modal Learning</StyledCircle>
+                        <StyledCircle>VLMs</StyledCircle>
+                        <StyledCircle>Object Detection</StyledCircle>
+                        <StyledCircle>Segmentation</StyledCircle>
+                        <StyledCircle>Image Processing</StyledCircle>
+                        <StyledCircle>Computer Vision</StyledCircle>
+                        <StyledCircle>Text Recognition</StyledCircle>
+                        <StyledCircle>Network Analysis</StyledCircle>
+                        <StyledCircle>Data Visualization</StyledCircle>
+                        <StyledCircle>OOP</StyledCircle>
                         <StyledCircle>Data Structures</StyledCircle>
                         <StyledCircle>Algorithms</StyledCircle>
-                        <StyledCircle>OOP</StyledCircle>
-                        <StyledCircle>Web Developement</StyledCircle>
-                        <StyledCircle>Socket Programming</StyledCircle>
+
                     </Cols>
                 </Grid>
             </StyledContainer>

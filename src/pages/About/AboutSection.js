@@ -18,13 +18,13 @@ const About = () => {
       <StyledContainer>
         <TextBlock>
           <StyledTitle>
-            Hi, I am <ColorfulText>Yasemin Ozkut</ColorfulText>
+            Hi! I am <ColorfulText>Yasemin Ozkut</ColorfulText>
           </StyledTitle>
           <StyledSubtitle>
             and I am a{' '}
             <ColorfulText>
               <Typewriter
-                words={[' CS Student.', ' Developer.', ' Dancer for Fun ;)']}
+                words={[' Master\'s Student.', ' AI/ML Enthusiast.', ' Researcher.', ' Developer.', ' Dancer for Fun ;)']}
                 loop={'infinite'}
                 cursor
                 cursorStyle='|'
@@ -35,7 +35,7 @@ const About = () => {
             </ColorfulText>
           </StyledSubtitle>
           <StyledText>
-            I am a senior Computer Science and Engineering student at Sabancı University. I am passionate about design and software engineering. I am a fast learner and I am eager to learn new things and take challenges. I love to work both in a team and by myself, so I can easily adapt in both situations.
+            I am a second-year M.S. student in Electrical and Computer Engineering at The Ohio State University, working as a graduate research assistant in PCVLab under the supervision of Dr. Alper Yilmaz. With a background in computer science, my research focuses on artificial intelligence, deep learning, and machine learning. I am passionate about developing innovative real-world AI/ML solutions, and thrive on learning new things and tackling challenges. I enjoy both independent work and collaborating within diverse teams, and adapt easily to different environments.
           </StyledText>
         </TextBlock>
       </StyledContainer>

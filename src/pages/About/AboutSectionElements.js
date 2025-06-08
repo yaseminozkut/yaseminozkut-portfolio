@@ -109,7 +109,7 @@ export const StyledText = styled.p`
   width: 100%;
   max-width: 90%;
   white-space: normal;
-  font-family: Verdana, Helvetica, Arial, Sans-serif;
+  font-family: Roboto, Verdana, Helvetica, Arial, Sans-serif;
   word-break: break-word;
 
   @media (max-width: 900px) {

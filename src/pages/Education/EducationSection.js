@@ -25,7 +25,7 @@ const Education = () => {
               <strong style={{"font-size": "1.5rem", color: "#555"}}>Sabancı University</strong>
               <p style={{"font-size": "0.7rem", "fontFamily": "Roboto", "color": "grey"}}>September 2019 - February 2024 ● Istanbul, Turkey</p>
               <p style={{"fontFamily": "Roboto", color: "#555", "font-size": "1.2rem"}}>B.S in Computer Science and Engineering</p>
-              <p style={{"font-size": "1rem", "padding-left": "2rem", "fontFamily": "Roboto", color: "#555"}}> <strong>Course Highlights:</strong> Introduction to programming with Python, Advanced Programming with C++, Data Science, Database Systems, Mobile Application Development, Data Structures, Probability, Statistical Modelling, Discrete Mathematics, Software Engineering, Computer Networks, Algorithms, Machine Learning</p>
+              <p style={{"font-size": "1rem", "padding-left": "2rem", "fontFamily": "Roboto", color: "#555"}}> <strong>Course Highlights:</strong> Machine Learning, Artificial Intelligence, Network Science, Data Science, Database Systems, Mobile Application Development, Data Structures, Algorithms, Probability, Statistical Modelling, Discrete Mathematics, Software Engineering, Computer Networks</p>
               <p style={{"fontFamily": "Roboto", color: "#555", "font-size": "1.2rem"}}>Minor in Business Analytics, School of Management</p>
               <p style={{"font-size": "1rem", "padding-left": "2rem", "fontFamily": "Roboto", color: "#555"}}> <strong>Course Highlights:</strong> Introduction to Data Analysis and Research in Business, Introduction to Business Analytics, Optimization Modeling in Business Analytics</p>
             </VerticalLineContent>

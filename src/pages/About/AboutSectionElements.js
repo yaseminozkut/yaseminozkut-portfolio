@@ -118,6 +118,17 @@ export const StyledText = styled.p`
   }
 `;
 
+export const StyledLink = styled.a`
+  color: #5cbd95;
+  font-weight: 500;
+  text-decoration: underline;
+  transition: color 0.15s;
+  &:hover {
+    color: #258b60;
+  }
+`;
+
+
 
 // RIGHT SIDE (image + button + icons, horizontal on desktop, vertical on mobile)
 export const RightColumn = styled.div`

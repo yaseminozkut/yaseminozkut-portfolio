@@ -51,9 +51,9 @@ export const StyledText = styled.p`
   position: relative;
   font-size: 1rem;
   color: #555;
-  font-weight: 550;
+  font-weight: 400;
   width: fit-content;
-  font-family: Verdana, Helvetica, Arial, Sans-serif;
+  font-family: Roboto, Verdana, Helvetica, Arial, Sans-serif;
 `;
 
 export const Grid = styled.div`
@@ -92,8 +92,8 @@ export const StyledCircle = styled.div`
   width: fit-content;
   padding: 0.35em 1.2em;
   font-size: 0.8rem;
-  font-weight: 550;
-  font-family: Verdana, Helvetica, Arial, Sans-serif;
+  font-weight: 400;
+  font-family: Roboto, Verdana, Helvetica, Arial, Sans-serif;
   box-shadow: 0 1px 8px rgba(0,0,0,0.07);   // <--- subtle floating shadow
   transition: box-shadow 0.18s, transform 0.15s;
 

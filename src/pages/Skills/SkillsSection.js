@@ -1,5 +1,5 @@
 import React from 'react';
-import { Background, StyledCircle, StyledContainer, StyledText, StyledTitle, Grid, Cols, Cols2} from "./SkillsSectionElements";
+import { Background, StyledCircle, StyledContainer, StyledText, StyledTitle, Grid, Cols} from "./SkillsSectionElements";
 import {ReactComponent as ReactLogo} from '../../img/wave.svg';
 
 const Skills = () => {
@@ -8,7 +8,7 @@ const Skills = () => {
     
         <Background id='skills'>
             <StyledContainer>
-            <ReactLogo flex="1"></ReactLogo>
+                <ReactLogo flex="1"></ReactLogo>
                 <StyledTitle>Skills</StyledTitle>
                 <Grid>
                     <StyledText size='md'>Programming Languages:</StyledText>
@@ -20,14 +20,14 @@ const Skills = () => {
                     </Cols>
                 </Grid>
                 <Grid>
-                    <StyledText>Front-End:</StyledText>
+                    <StyledText>Front End:</StyledText>
                     <Cols>
                         <StyledCircle>React.JS</StyledCircle>
                         <StyledCircle>Flutter</StyledCircle>
                     </Cols>
                 </Grid>
                 <Grid>
-                    <StyledText>Back-End:</StyledText>
+                    <StyledText>Back End:</StyledText>
                     <Cols>
                         <StyledCircle>Node.JS</StyledCircle>
                         <StyledCircle>Express.JS</StyledCircle>

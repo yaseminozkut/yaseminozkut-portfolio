@@ -4,27 +4,49 @@ export const Background = styled.div`
     background: #ececec;
     display: flex;
     position: relative;
-    height: 800px;
+    width: 100vw;      // Add this line
+    max-width: 100%;   // Just in case
+    height: 600px;
     z-index: 1;
+    overflow-x: hidden; /* <--- prevents unwanted horizontal scroll! */
+    /* For very large screens, make section shorter */
+    @media (min-width: 1600px) {
+      height: auto;
+    }
+    /* For mid-size screens, slightly shorter */
+    @media (max-width: 1100px) {
+      height: auto;
+    }
 `;
 
 export const StyledContainer = styled.div`
-  top: 1rem;
   left: 5%;
   width: 100%;
   display: inline-block;
 `;
 
 export const StyledTitle = styled.p`
-  position: absolute;
-  font-size: 4rem;
+  font-size: clamp(1.1rem, 5vw, 3rem);
   font-weight: bold;
-  left: 8rem;
-  top: 6rem;
-  color: #5cbd95;
+  color: #5cbd95;;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 5vw;
   width: fit-content;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
   font-family: 'JetBrains Mono', Verdana, Helvetica, Arial, Sans-serif;
+  max-width: 100%;
+
+  @media (max-width: 900px) {
+    text-align: left;
+    font-size: clamp(1.1rem, 7vw, 2.5rem);
+  }
+
 `;
+
 
 export const StyledText = styled.p`
   position: relative;
@@ -36,23 +58,36 @@ export const StyledText = styled.p`
 `;
 
 export const Grid = styled.div`
-    position: relative;
-    display: grid;
-    width: 80%;
-    grid-template-rows: 50px 50px;
-    grid-template-columns: 120px 1000px;
-    grid-gap: 5px;
-    left: 8rem;
-    align-items: start;
-`;
-export const Cols = styled.div`
-    position: relative;
+  position: relative;
+  display: grid;
+  width: 80%;
+  grid-template-rows: auto;
+  grid-template-columns: 120px 1fr;    // <-- key line!
+  grid-gap: 5px;
+  padding-left: 5vw;
+  align-items: start;
+
+  @media (max-width: 900px) {
     display: flex;
-    grid-template-rows: 50px 50px;
-    grid-template-columns: 400px 800px;
-    grid-gap: 5px;
-    margin-top: 16px;
+    flex-direction: column;
+    padding-left: 4vw;
+    gap: 0.4rem 0;
+    width: 98vw;
+  }
 `;
+
+
+
+export const Cols = styled.div`
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;      // This line enables wrapping
+  width: 100%;
+  gap: 8px 12px;        // Use gap instead of grid-gap for flex!
+  margin-top: 16px;
+`;
+
+
 
 export const StyledCircle = styled.div`
   border-radius: 30px;

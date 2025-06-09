@@ -23,7 +23,7 @@ export const TimelineContainer = styled.div`
 `;
 
 export const StyledTitle = styled.p`
-  font-size: clamp(1.1rem, 5vw, 3rem);
+  font-size: clamp(1.1rem, 5vw, 2rem);
   font-weight: bold;
   color: #5cbd95;;
   margin-bottom: 0;
@@ -39,7 +39,7 @@ export const StyledTitle = styled.p`
 
   @media (max-width: 900px) {
     text-align: left;
-    font-size: clamp(1.1rem, 7vw, 2.5rem);
+    font-size: clamp(1.1rem, 7vw, 1.5rem);
   }
 
 `;

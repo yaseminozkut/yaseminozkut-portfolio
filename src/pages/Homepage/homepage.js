@@ -4,6 +4,7 @@ import { Typewriter } from 'react-simple-typewriter'
 import Sidebar from "../../components/Sidebar/Sidebar";
 import { Navbar } from "../../components/Navbar/Navbar";
 import About from "../About/AboutSection";
+import AboutSkills from "../AboutSkills/AboutSkillsSection";
 import Skills from "../Skills/SkillsSection";
 import Education from "../Education/EducationSection";
 import Experience from "../Experience/ExperienceSection";
@@ -25,7 +26,7 @@ const Homepage = () => {
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle} />
             <About id='about'/>
-            <Skills id='skills'/>
+            <AboutSkills id='aboutskills'/>
             <Education/>
             <Experience/>
             <Projects/>

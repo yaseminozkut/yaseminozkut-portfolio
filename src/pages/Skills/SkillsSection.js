@@ -21,7 +21,7 @@ const Skills = () => {
                     </Cols>
                 </Grid>
                 <Grid>
-                    <StyledText>AI/ML Frameworks & Libraries:</StyledText>
+                    <StyledText>Frameworks & Libraries:</StyledText>
                     <Cols>
                         <StyledCircle>PyTorch</StyledCircle>
                         <StyledCircle>CUDA</StyledCircle>
@@ -33,24 +33,6 @@ const Skills = () => {
                         <StyledCircle>NumPy</StyledCircle>
                         <StyledCircle>Scikit-learn</StyledCircle>
                         <StyledCircle>Matplotlib</StyledCircle>
-                    </Cols>
-                </Grid>
-                <Grid>
-                    <StyledText>Front-end:</StyledText>
-                    <Cols>
-                        <StyledCircle>React.js</StyledCircle>
-                        <StyledCircle>CSS</StyledCircle>
-                        <StyledCircle>Flutter</StyledCircle>
-                    </Cols>
-                </Grid>
-                <Grid>
-                    <StyledText>Back-end & Databases:</StyledText>
-                    <Cols>
-                        <StyledCircle>Node.js</StyledCircle>
-                        <StyledCircle>Express.js</StyledCircle>
-                        <StyledCircle>MongoDB</StyledCircle>
-                        <StyledCircle>SQL</StyledCircle>
-                        <StyledCircle>Firebase</StyledCircle>
                     </Cols>
                 </Grid>
                 <Grid>
@@ -68,12 +50,10 @@ const Skills = () => {
                 <Grid>
                     <StyledText>Techniques:</StyledText>
                     <Cols>
-                        <StyledCircle>Machine Learning</StyledCircle>
-                        <StyledCircle>Artificial Intelligence</StyledCircle>
-                        <StyledCircle>Deep Learning</StyledCircle>
+                        <StyledCircle>Deep/Machine Learning</StyledCircle>
                         <StyledCircle>Distributed Training</StyledCircle>
                         <StyledCircle>Multi-modal Learning</StyledCircle>
-                        <StyledCircle>VLMs</StyledCircle>
+                        <StyledCircle>Vision-Language Models</StyledCircle>
                         <StyledCircle>Object Detection</StyledCircle>
                         <StyledCircle>Segmentation</StyledCircle>
                         <StyledCircle>Image Processing</StyledCircle>
@@ -85,6 +65,19 @@ const Skills = () => {
                         <StyledCircle>Data Structures</StyledCircle>
                         <StyledCircle>Algorithms</StyledCircle>
 
+                    </Cols>
+                </Grid>
+                <Grid>
+                    <StyledText>Software & Web:</StyledText>
+                    <Cols>
+                        <StyledCircle>React.js</StyledCircle>
+                        <StyledCircle>CSS</StyledCircle>
+                        <StyledCircle>Flutter</StyledCircle>
+                        <StyledCircle>Node.js</StyledCircle>
+                        <StyledCircle>Express.js</StyledCircle>
+                        <StyledCircle>MongoDB</StyledCircle>
+                        <StyledCircle>SQL</StyledCircle>
+                        <StyledCircle>Firebase</StyledCircle>
                     </Cols>
                 </Grid>
             </StyledContainer>

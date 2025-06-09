@@ -6,7 +6,7 @@ export const Background = styled.div`
     position: relative;
     width: 100vw;      // Add this line
     max-width: 100%;   // Just in case
-    height: 800px;
+    height: 620px;
     z-index: 1;
     overflow-x: hidden; /* <--- prevents unwanted horizontal scroll! */
     /* For very large screens, make section shorter */
@@ -26,7 +26,7 @@ export const StyledContainer = styled.div`
 `;
 
 export const StyledTitle = styled.p`
-  font-size: clamp(1.1rem, 5vw, 3rem);
+  font-size: clamp(1.1rem, 5vw, 2rem);
   font-weight: bold;
   color: #5cbd95;;
   margin-bottom: 0;
@@ -42,7 +42,7 @@ export const StyledTitle = styled.p`
 
   @media (max-width: 900px) {
     text-align: left;
-    font-size: clamp(1.1rem, 7vw, 2.5rem);
+    font-size: clamp(1.1rem, 7vw, 1.5rem);
   }
 
 `;

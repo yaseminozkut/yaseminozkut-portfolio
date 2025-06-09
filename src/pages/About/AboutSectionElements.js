@@ -37,12 +37,14 @@ export const StyledContainer = styled.div`
   align-items: flex-start;
   flex: 0 1 70%;
   padding-left: 5vw;
-  padding-right: 2vw;
 
   @media (max-width: 900px) {
     align-items: center;
-    width: 100%;
-    padding: 5vw;
+    width: 90%;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 0;
+    padding-bottom: 0;
     text-align: center;
   }
 `;
@@ -77,7 +79,7 @@ export const StyledTitle = styled.p`
 
   @media (max-width: 900px) {
     text-align: left;
-    font-size: clamp(1.1rem, 7vw, 2.5rem);
+    font-size: clamp(1.1rem, 7vw, 2rem);
   }
 `;
 
@@ -146,7 +148,7 @@ export const RightColumn = styled.div`
     align-items: center;
     max-width: 100vw;
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 3rem;
     padding-top: 0;
   }
 `;

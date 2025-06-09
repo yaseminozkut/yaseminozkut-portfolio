@@ -79,7 +79,7 @@ export const StyledTitle = styled.p`
 
   @media (max-width: 900px) {
     text-align: left;
-    font-size: clamp(1.1rem, 7vw, 2rem);
+    font-size: clamp(1.1rem, 7vw, 1.5rem);
   }
 `;
 

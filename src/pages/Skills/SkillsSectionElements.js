@@ -54,6 +54,9 @@ export const StyledText = styled.p`
   font-weight: 400;
   width: fit-content;
   font-family: Roboto, Verdana, Helvetica, Arial, Sans-serif;
+  @media (max-width: 900px) {
+    font-size: 0.8rem;
+  }
 `;
 
 export const Grid = styled.div`
@@ -61,7 +64,7 @@ export const Grid = styled.div`
   display: grid;
   width: 80%;
   grid-template-rows: auto;
-  grid-template-columns: 120px 1fr;    // <-- key line!
+  grid-template-columns: 120px 1fr;
   grid-gap: 5px;
   padding-left: 5vw;
   align-items: start;
@@ -70,19 +73,26 @@ export const Grid = styled.div`
     display: flex;
     flex-direction: column;
     padding-left: 4vw;
-    gap: 0.4rem 0;
+    padding-top: 1vw;
+    gap: 0.3rem 0; // Use a small vertical gap between label and Cols
     width: 98vw;
   }
 `;
 
+
 export const Cols = styled.div`
   position: relative;
   display: flex;
-  flex-wrap: wrap;      // This line enables wrapping
+  flex-wrap: wrap;
   width: 100%;
-  gap: 8px 12px;        // Use gap instead of grid-gap for flex!
+  gap: 8px 12px;
   margin-top: 16px;
+
+  @media (max-width: 900px) {
+    margin-top: -0.8em; // much smaller on mobile
+  }
 `;
+
 
 export const StyledCircle = styled.div`
   border-radius: 30px;
@@ -101,6 +111,10 @@ export const StyledCircle = styled.div`
     transform: translateY(-4px) scale(1.04);
     box-shadow: 0 8px 24px rgba(0,0,0,0.15); // <--- more "lift" on hover
     border: 1.5px solid rgb(169, 169, 172);            // optional: accent border on hover
+  }
+  @media (max-width: 900px) {
+    font-size: 0.6rem;
+    padding: 0.3em 1em;
   }
 `;
 

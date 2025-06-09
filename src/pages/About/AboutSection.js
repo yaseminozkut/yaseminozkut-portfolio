@@ -2,7 +2,8 @@ import React from 'react';
 import {
   Background, IconLinks, ResumeButton, StyledContainer, StyledImg,
   StyledText, StyledTitle, StyledSubtitle, IconLink, RightColumn, TextBlock, ActionsStack, StyledLink 
-} from "./AboutSectionElements";
+} from "./AboutSectionElements"; 
+import FlippingProfile from "./FlippingProfileEffect";
 import { Typewriter } from 'react-simple-typewriter';
 import resume from '../../img/Yasemin Ozkut Resume.pdf';
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
@@ -24,7 +25,7 @@ const About = () => {
             and I am a{' '}
             <ColorfulText>
               <Typewriter
-                words={[' Master\'s Student.', ' AI/ML Enthusiast.', ' Researcher.', ' Developer.', ' Dancer for Fun ;)']}
+                words={[' M.S. Student @ OSU', ' ML/AI Enthusiast', ' Researcher', ' Developer', ' Dancer for Fun ;)']}
                 loop={'infinite'}
                 cursor
                 cursorStyle='|'
@@ -34,32 +35,9 @@ const About = () => {
               />
             </ColorfulText>
           </StyledSubtitle>
-          <StyledText>
-            I am a second-year M.S. student in Electrical and Computer Engineering at The Ohio State University, working as a graduate research assistant in&nbsp; 
-            <StyledLink
-              href="https://u.osu.edu/pcvlab/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              PCVLab&nbsp;
-            </StyledLink>
-            
-            
-            under the supervision of&nbsp;
-            <StyledLink
-              href="https://ceg.osu.edu/people/yilmaz.15"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Alper Yilmaz
-            </StyledLink>.
-            With a background in Computer Science and Engineering (Sabanci University), my research focuses on artificial intelligence, deep learning, and machine learning. I am passionate about developing innovative real-world AI/ML solutions, and thrive on learning new things and tackling challenges. I enjoy both independent work and collaborating within diverse teams, and adapt easily to different environments.
-          </StyledText>
-
         </TextBlock>
       </StyledContainer>
       <RightColumn>
-        <StyledImg src={require("../../img/Image.png")} alt="Profile" />
         <ActionsStack>
           <IconLinks>
             <IconLink>
@@ -79,6 +57,7 @@ const About = () => {
             </IconLink>
           </IconLinks>
         </ActionsStack>
+        <FlippingProfile />
       </RightColumn>
     </Background>
   );

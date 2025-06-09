@@ -6,7 +6,7 @@ export const Background = styled.div`
   background: #4400e6;
   display: flex;
   position: relative;
-  height: 300px;
+  height: 150px;
   align-items: flex-start;
   z-index: 1;
 
@@ -35,7 +35,7 @@ export const StyledContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  flex: 0 1 60%;
+  flex: 0 1 70%;
   padding-left: 5vw;
   padding-right: 2vw;
 
@@ -83,7 +83,7 @@ export const StyledTitle = styled.p`
 
 // SUBTITLE
 export const StyledSubtitle = styled.p`
-  font-size: clamp(0.9rem, 3vw, 2rem);
+  font-size: clamp(0.9rem, 3vw, 1.9rem);
   color: #ececec;
   margin-bottom: 0.1rem;
   margin-top: -0.1em;
@@ -134,15 +134,15 @@ export const StyledLink = styled.a`
 export const RightColumn = styled.div`
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-end;
   justify-content: flex-start;
-  flex: 0 1 40%;
+  flex: 0 1 20%;
   min-width: 180px;
   max-width: 400px;
-  padding-top: 3rem;
+  padding-top: 2.5rem;
 
   @media (max-width: 900px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     max-width: 100vw;
     width: 100%;
@@ -153,26 +153,27 @@ export const RightColumn = styled.div`
 
 // PROFILE IMAGE
 export const StyledImg = styled.img`
-  width: clamp(70px, 18vw, 280px);
-  max-width: 280px;
-  min-width: 150px;
+  width: clamp(48px, 11vw, 120px);
+  max-width: 120px;
+  min-width: 48px;
   height: auto;
   object-fit: contain;
-  margin-right: 2.5rem;
+  margin-right: 1.5rem;
 
   @media (max-width: 1000px) {
-    width: clamp(60px, 44vw, 200px);
-    max-width: 150px;
-    min-width: 90px;
-    margin: 0 auto 1.2rem auto;
+    width: clamp(36px, 22vw, 90px);
+    max-width: 90px;
+    min-width: 36px;
+    margin: 0 auto 0.8rem auto;
   }
   @media (max-width: 600px) {
-  width: clamp(44px, 34vw, 90px);
-  max-width: 50px;
-  min-width: 45px;
-  margin-bottom: 0.5rem;
+    width: clamp(24px, 18vw, 56px);
+    max-width: 56px;
+    min-width: 24px;
+    margin-bottom: 0.4rem;
   }
 `;
+
 
 export const ActionsStack = styled.div`
   display: flex;
@@ -181,6 +182,7 @@ export const ActionsStack = styled.div`
 
   @media (max-width: 900px) {
     align-items: center;
+    margin-top: 1.2rem;
   }
 `;
 
@@ -203,20 +205,5 @@ export const IconLink = styled.a`
 
   &:hover {
     transform: translateY(-2px);
-  }
-`;
-
-export const ResumeButton = styled(Button)`
-  border-radius: 0.2rem;
-  font-size: 1rem;
-  color: black;
-  font-weight: bold;
-  margin: 0 0 1.2rem 0;
-  background-color: #5cbd95;
-  text-decoration: none;
-  font-family: inherit;
-
-  &:hover {
-    background-color: white;
   }
 `;

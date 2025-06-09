@@ -98,7 +98,7 @@ export const StyledSubtitle = styled.p`
 
   @media (max-width: 900px) {
     text-align: left;
-    font-size: clamp(0.85rem, 5vw, 1rem);
+    font-size: clamp(0.85rem, 5vw, 0.9rem);
   }
 `;
 

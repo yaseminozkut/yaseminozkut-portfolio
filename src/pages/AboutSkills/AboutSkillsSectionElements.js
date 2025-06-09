@@ -135,7 +135,7 @@ export const Cols = styled.div`
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  gap: 8px 12px;
+  gap: 6px 6px;
   margin-top: 16px;
 
 `;
@@ -161,6 +161,6 @@ export const StyledCircle = styled.div`
   }
   @media (max-width: 900px) {
     font-size: 0.6rem;
-    padding: 0.3em 1em;
+    padding: 0.2em 0.5em;
   }
 `;

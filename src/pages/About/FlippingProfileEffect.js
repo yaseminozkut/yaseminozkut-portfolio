@@ -10,6 +10,10 @@ const ProfileFlipContainer = styled.div`
   width: 130px;
   height: 130px;
   margin: -8% auto 0 auto;
+  @media (max-width: 900px){
+    width: 80px;
+    height: 80px;
+  }
 `;
 
 const FlipInner = styled.div`
@@ -29,6 +33,10 @@ const FlipFace = styled.img`
   border-radius: 50%;
   backface-visibility: hidden;
   border: 2px black;
+  @media (max-width: 900px){
+    width: 80px;
+    height: 80px;
+  }
   /* Layered shadow for strong, realistic 3D effect: */
   box-shadow:
     0 6px 14px 0 rgba(44, 62, 80, 0.23),   /* main shadow */

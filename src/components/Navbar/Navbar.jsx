@@ -22,10 +22,10 @@ export const Navbar = ( {toggle} ) => {
 
           <NavMenu>
             <NavItem>
-              <NavLinks to = 'about' smooth={true} duration={500} spy={true} exact='true' offset={-80} >About</NavLinks>
+              <NavLinks to = 'aboutskills' smooth={true} duration={500} spy={true} exact='true' offset={-80} >About</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to = 'skills' smooth={true} duration={500} spy={true} exact='true' offset={-60}>Skills</NavLinks>
+              <NavLinks to = 'aboutskills' smooth={true} duration={500} spy={true} exact='true' offset={-60}>Skills</NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks to = 'education' smooth={true} duration={500} spy={true} exact='true' offset={-60}>Education</NavLinks>

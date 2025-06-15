@@ -1,100 +1,92 @@
 import styled from "styled-components";
-import { Button } from "reactstrap";
 
-// MAIN FLEX CONTAINER
+// OUTER SECTION
 export const Background = styled.div`
   background: #4400e6;
+  width: 100vw;
+  min-height: 180px;
   display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  height: 150px;
-  align-items: flex-start;
   z-index: 1;
 
-  /* For very large screens, make section shorter */
-  @media (min-width: 1600px) {
-    height: 220px;
-  }
-  /* For mid-size screens, slightly shorter */
-  @media (max-width: 1100px) {
-    height: 260px;
-  }
-  /* For phones/tablets, stack columns and auto height */
+`;
+
+// FLEX ROW: Profile | Text | Icons
+export const AboutRow = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1100px;
+  padding: 0 4vw;
+  margin: 0 auto;
+  gap: 2vw;
+
   @media (max-width: 900px) {
     flex-direction: column;
-    height: auto;
-    padding-bottom: 2rem;
-  }
-  @media (max-width: 600px) {
-    padding-bottom: 1rem;
+    gap: 0.5rem;
+    padding: 5vw 5vw 5vw 5vw;
+    align-items: stretch;
   }
 `;
 
-// LEFT SIDE
-export const StyledContainer = styled.div`
+// PROFILE LEFT
+export const FlippingProfileContainer = styled.div`
+  flex: 0 0 auto;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  align-items: flex-start;
-  flex: 0 1 70%;
-  padding-left: 5vw;
-
   @media (max-width: 900px) {
-    align-items: center;
-    width: 90%;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    padding-top: 0;
-    padding-bottom: 0;
-    text-align: center;
+    order: 2;            // Move below text for mobile!
+    margin: 0 auto;
   }
 `;
 
+// TEXT CENTER
 export const TextBlock = styled.div`
+  flex: 1 1 65%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: fit-content;
-  max-width: 100%;
+  min-width: 200px;
 
   @media (max-width: 900px) {
-    width: 100%;
-    max-width: 100vw;
+    order: 1;
     align-items: flex-start;
+    min-width: 0;
+    width: 100%;
+    margin-bottom: 0.3rem;
   }
 `;
 
-// TITLE
 export const StyledTitle = styled.p`
-  font-size: clamp(1.1rem, 5vw, 3rem);
+  font-size: clamp(1.1rem, 5vw, 2.2rem);
   font-weight: bold;
   color: #ececec;
-  margin-bottom: 0;
-  width: fit-content;
+  margin: 0 0 0.2em 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: left;
   font-family: 'JetBrains Mono', Verdana, Helvetica, Arial, Sans-serif;
-  max-width: 100%;
 
   @media (max-width: 900px) {
     text-align: left;
-    font-size: clamp(1.1rem, 7vw, 1.5rem);
+    white-space: normal;
+    font-size: clamp(1.5rem, 7vw, 1.45rem);
+    margin-bottom: -0.1rem;
   }
 `;
 
-// SUBTITLE
 export const StyledSubtitle = styled.p`
-  font-size: clamp(0.9rem, 3vw, 1.9rem);
+  font-size: clamp(1rem, 3vw, 1.35rem);
   color: #ececec;
-  margin-bottom: 0.1rem;
-  margin-top: -0.1em;
-  width: 100%;
-  max-width: 90%;
-  white-space: normal;
+  margin: 0 0 0.5em 0;
   text-align: left;
   font-family: 'JetBrains Mono', Verdana, Helvetica, Arial, Sans-serif;
-  word-break: break-word;
 
   @media (max-width: 900px) {
     text-align: left;
@@ -102,89 +94,19 @@ export const StyledSubtitle = styled.p`
   }
 `;
 
-// BODY TEXT
-export const StyledText = styled.p`
-  font-size: clamp(0.82rem, 1vw, 1rem);
-  color: #ececec;
-  margin-bottom: 0;
-  text-align: justify;
-  width: 100%;
-  max-width: 90%;
-  white-space: normal;
-  font-family: Roboto, Verdana, Helvetica, Arial, Sans-serif;
-  word-break: break-word;
-
-  @media (max-width: 900px) {
-    text-align: left;
-    font-size: clamp(0.75rem, 3vw, 0.8rem);
-  }
-`;
-
-export const StyledLink = styled.a`
-  color: #5cbd95;
-  font-weight: 500;
-  text-decoration: underline;
-  transition: color 0.15s;
-  &:hover {
-    color: #258b60;
-  }
-`;
-
-
-
-// RIGHT SIDE (image + button + icons, horizontal on desktop, vertical on mobile)
-export const RightColumn = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: flex-start;
-  flex: 0 1 20%;
-  min-width: 180px;
-  max-width: 400px;
-  padding-top: 2.5rem;
-
-  @media (max-width: 900px) {
-    flex-direction: column-reverse;
-    align-items: center;
-    max-width: 100vw;
-    width: 100%;
-    margin-top: 3rem;
-    padding-top: 0;
-  }
-`;
-
-// PROFILE IMAGE
-export const StyledImg = styled.img`
-  width: clamp(48px, 11vw, 120px);
-  max-width: 120px;
-  min-width: 48px;
-  height: auto;
-  object-fit: contain;
-  margin-right: 1.5rem;
-
-  @media (max-width: 1000px) {
-    width: clamp(36px, 22vw, 90px);
-    max-width: 90px;
-    min-width: 36px;
-    margin: 0 auto 0.8rem auto;
-  }
-  @media (max-width: 600px) {
-    width: clamp(24px, 18vw, 56px);
-    max-width: 56px;
-    min-width: 24px;
-    margin-bottom: 0.4rem;
-  }
-`;
-
-
+// ICONS RIGHT
 export const ActionsStack = styled.div`
+  flex: 0 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
+  justify-content: center;
+  
 
   @media (max-width: 900px) {
+    order: 3;             // Move icons to bottom for mobile
     align-items: center;
-    margin-top: 1.2rem;
+    margin-top: 0.6rem;
   }
 `;
 
@@ -193,10 +115,10 @@ export const IconLinks = styled.div`
   flex-direction: row;
   gap: 1rem;
   margin: 0;
-  justify-content: flex-start;
+  justify-content: flex-end;
 
   @media (max-width: 900px) {
-    justify-content: center;
+    justify-content: flex-start;
   }
 `;
 
@@ -204,8 +126,8 @@ export const IconLink = styled.a`
   font-size: 2rem;
   color: inherit;
   text-decoration: none;
-
   &:hover {
     transform: translateY(-2px);
   }
 `;
+

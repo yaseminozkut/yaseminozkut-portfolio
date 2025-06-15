@@ -1,21 +1,31 @@
 import styled from "styled-components";
 
 export const Background = styled.div`
-  background: #ececec;
-  min-height: 200px;
-  width: 100vw;
-  display: flex;
+    background: #ececec;
+    width: 100vw;
+    max-width: 100%;
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
+    padding-top: 0;
+    padding-bottom: 2vw;
 `;
 
 export const StyledContainer = styled.div`
-  width: 100%;
-  max-width: 850px;
-  /* Remove margin: 0 auto if you want it strictly left-aligned */
-  padding-top: 1rem;
-  padding-left: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+  width: 82%;
+  padding: 0 5vw 0 5vw;
   /* Optional: Keep a little right padding for breathing room */
-  padding-right: 2vw;
   box-sizing: border-box;
+  @media (max-width: 900px) {
+      flex-direction: column;
+      width: 99vw;
+      padding: 5vw;
+    }
 `;
 
 
@@ -57,6 +67,10 @@ export const EduLogo = styled.img`
   object-fit: contain;
   margin-top: 0.12rem;
   border-radius: 8px;
+  @media (max-width: 900px) {
+    width: 35px;
+    height: 35px;
+  }
 `;
 
 export const EduTextBlock = styled.div`
@@ -66,8 +80,8 @@ export const EduTextBlock = styled.div`
 
 export const EduDegree = styled.div`
   font-family: 'Roboto', Verdana, Helvetica, Arial, Sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: 1.3rem;
+  font-weight: 500;
   color: #555;
   letter-spacing: 0;
   @media (max-width: 900px) {

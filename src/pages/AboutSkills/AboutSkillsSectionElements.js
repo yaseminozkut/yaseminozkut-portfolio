@@ -16,12 +16,14 @@ export const StyledContainer = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    width: 100%;
+    width: 82%;
     margin: 0 auto;
+    padding: 0 9vw 0 9vw;
 
     @media (max-width: 900px) {
       flex-direction: column;
       width: 99vw;
+      padding: 0;
     }
 `;
 

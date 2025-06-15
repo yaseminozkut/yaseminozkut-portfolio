@@ -27,6 +27,7 @@ const Homepage = () => {
             <Navbar toggle={toggle} />
             <About id='about'/>
             <AboutSkills id='aboutskills'/>
+            <Education/>
             {/*
                 <Education/>
                 <Experience/>

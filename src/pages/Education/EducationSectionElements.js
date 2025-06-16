@@ -62,7 +62,7 @@ export const EduItem = styled.div`
 `;
 
 export const EduLogo = styled.img`
-  width: 48px;
+  width: 68px;
   height: 48px;
   object-fit: contain;
   margin-top: 0.12rem;

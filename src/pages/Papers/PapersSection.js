@@ -28,7 +28,7 @@ const paperList = [
           href="https://osupcvlab.github.io/ERDES-3D/"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ color: "#4400e6", textDecoration: "none" }}
+          style={{ color: "#4400e6", textDecoration: "underline" }}
         >
           Project page
         </a>

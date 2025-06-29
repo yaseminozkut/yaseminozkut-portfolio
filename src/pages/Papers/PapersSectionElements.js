@@ -33,7 +33,9 @@ export const SectionTitle = styled.h2`
   font-weight: bold;
   @media (max-width: 900px) {
     font-size: clamp(1.1rem, 7vw, 1.5rem);
-    margin-left: 7vw;
+    margin-left: 0;            // 🧹 Remove left margin
+    width: 100%;               // 🧩 Make it take full width
+    text-align: center;        // 🎯 Center the text
   }
 `;
 
@@ -146,6 +148,10 @@ export const CardTitleRow = styled.div`
   display: flex;
   align-items: center;
   gap: 0.55rem;
+  @media (max-width: 700px) {
+    justify-content: center;
+    text-align: center;
+  }
 `;
 
 export const CardTitle = styled.div`
@@ -168,12 +174,16 @@ export const CardSubtitle = styled.div`
   font-family: 'Roboto', Verdana, Helvetica, Arial, sans-serif;
   color: #666;
   margin-bottom: 0.1em;
+  @media (max-width: 700px) {
+    justify-content: center;
+    text-align: center;
+  }
 `;
 
 export const CardDesc = styled.div`
   font-size: 0.8rem;
   font-family: 'Roboto', Verdana, Helvetica, Arial, sans-serif;
-  color: #333;
+  color: #555;
   margin-top: 0.5em;
 `;
 

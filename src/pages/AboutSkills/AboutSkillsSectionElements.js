@@ -81,8 +81,10 @@ export const StyledTitle = styled.p`
   max-width: 100%;
 
   @media (max-width: 900px) {
-    text-align: left;
     font-size: clamp(1.1rem, 7vw, 1.5rem);
+    margin-left: 0;            // 🧹 Remove left margin
+    width: 100%;               // 🧩 Make it take full width
+    text-align: center;        // 🎯 Center the text
   }
 `;
 
@@ -97,7 +99,7 @@ export const StyledText = styled.p`
   word-break: break-word;
   text-align: justify;
   @media (max-width: 900px) {
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-bottom: 1.2rem;
   }
 `;

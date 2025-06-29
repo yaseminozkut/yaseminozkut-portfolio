@@ -7,9 +7,11 @@ import {
 } from "./PapersSectionElements";
 import { FaGithub } from "react-icons/fa";
 
-// Replace with your assets!
 import eyeVideo from "../../img/eye_video.mp4";
 import eyeCover from "../../img/eye_cover.png";
+
+// Utility to check for mobile
+const IS_MOBILE = typeof window !== "undefined" && /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 
 const paperList = [
   {
@@ -17,23 +19,21 @@ const paperList = [
     video: eyeVideo,
     title: "ERDES: A Benchmark Dataset for Retinal Detachment Classification in Spatiotemporal Ocular Ultrasound",
     subtitle: (
-                <>
-                  Pouyan Navard, <b>Yasemin Ozkut</b>, Srikar Adhikari, Alper Yilmaz
-                  <br></br>
-                  <i>Nature Scientific Data 2025 (Soon)</i>
-                  <br></br>
-                  <a
-                    href="/projects/erdes-3d"
-                    style={{ color: "#4400e6", textDecoration: "none"}}
-                  >
-                    Project page
-                  </a>
-                </>
-                
-              ),
+      <>
+        Pouyan Navard, <b>Yasemin Ozkut</b>, Srikar Adhikari, Alper Yilmaz
+        <br />
+        <i>Nature Scientific Data 2025 (Soon)</i>
+        <br />
+        <a
+          href="/projects/erdes-3d"
+          style={{ color: "#4400e6", textDecoration: "none" }}
+        >
+          Project page
+        </a>
+      </>
+    ),
     desc: "",
   },
-
 ];
 
 export default function PapersSection() {
@@ -52,13 +52,13 @@ export default function PapersSection() {
         <PapersRow>
           {paperList.map((proj, i) => {
             const handleMouseEnter = () => {
-              if (videoRefs.current[i]?.current) {
+              if (!IS_MOBILE && videoRefs.current[i]?.current) {
                 videoRefs.current[i].current.currentTime = 0;
                 videoRefs.current[i].current.play();
               }
             };
             const handleMouseLeave = () => {
-              if (videoRefs.current[i]?.current) {
+              if (!IS_MOBILE && videoRefs.current[i]?.current) {
                 videoRefs.current[i].current.pause();
                 videoRefs.current[i].current.currentTime = 0;
               }
@@ -67,22 +67,40 @@ export default function PapersSection() {
             return (
               <Card
                 key={i}
-                onMouseEnter={proj.video ? handleMouseEnter : undefined}
-                onMouseLeave={proj.video ? handleMouseLeave : undefined}
+                className={proj.video ? "has-video" : ""}
+                onMouseEnter={!IS_MOBILE && proj.video ? handleMouseEnter : undefined}
+                onMouseLeave={!IS_MOBILE && proj.video ? handleMouseLeave : undefined}
               >
                 <CardMediaWrapper>
-                  <CardCoverImg src={proj.cover} alt={proj.title} style={{ opacity: proj.video ? 1 : 1 }} />
-                  {proj.video && (
+                  {proj.video && IS_MOBILE ? (
                     <CardVideo
                       ref={videoRefs.current[i]}
                       src={proj.video}
                       muted
                       loop
+                      autoPlay
                       playsInline
-                      preload="none"
+                      preload="auto"
                       tabIndex={-1}
                       aria-hidden="true"
+                      style={{ opacity: 1, position: "relative", pointerEvents: "auto" }}
                     />
+                  ) : (
+                    <>
+                      <CardCoverImg src={proj.cover} alt={proj.title} />
+                      {proj.video && (
+                        <CardVideo
+                          ref={videoRefs.current[i]}
+                          src={proj.video}
+                          muted
+                          loop
+                          playsInline
+                          preload="none"
+                          tabIndex={-1}
+                          aria-hidden="true"
+                        />
+                      )}
+                    </>
                   )}
                 </CardMediaWrapper>
                 <CardContent>

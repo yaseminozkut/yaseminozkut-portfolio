@@ -117,25 +117,20 @@ export const Card = styled.div`
   align-items: stretch;
   transition: box-shadow 0.18s;
 
-  &:hover {
-    box-shadow: 0 6px 24px 0 rgba(44,62,80,0.13);
-  }
-
   &.has-video:hover ${CardCoverImg} {
     opacity: 0;
   }
-
   &.has-video:hover ${CardVideo} {
     opacity: 1;
     pointer-events: auto;
   }
 
-
-  @media (max-width: 700px) {
-    flex-direction: column;
-    max-width: 100%;
+  @media (max-width: 900px) {
+    flex-direction: column; // <-- make it stack vertically!
+    max-width: 100vw;
   }
 `;
+
 
 
 export const CardContent = styled.div`

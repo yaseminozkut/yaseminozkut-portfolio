@@ -7,7 +7,6 @@ import {
 } from "./ProjectsSectionElements";
 import { FaGithub } from "react-icons/fa";
 
-// Replace with your assets!
 import daiLabVideo from "../../img/dai-labor-demo.mp4";
 import daiLabCover from "../../img/dai-labor-cover.png";
 import chestCover from "../../img/chest-cover.png";
@@ -54,8 +53,12 @@ const projectList = [
 
 ];
 
+// Utility to check for mobile
+const IS_MOBILE = typeof window !== "undefined" && /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
 export default function ProjectsSection() {
   const videoRefs = useRef([]);
+
   // Initialize refs if not already created
   if (videoRefs.current.length !== projectList.length) {
     videoRefs.current = Array(projectList.length)
@@ -69,14 +72,15 @@ export default function ProjectsSection() {
         <SectionTitle>Projects</SectionTitle>
         <ProjectsRow>
           {projectList.map((proj, i) => {
+            // DESKTOP: hover handlers
             const handleMouseEnter = () => {
-              if (videoRefs.current[i]?.current) {
+              if (!IS_MOBILE && videoRefs.current[i]?.current) {
                 videoRefs.current[i].current.currentTime = 0;
                 videoRefs.current[i].current.play();
               }
             };
             const handleMouseLeave = () => {
-              if (videoRefs.current[i]?.current) {
+              if (!IS_MOBILE && videoRefs.current[i]?.current) {
                 videoRefs.current[i].current.pause();
                 videoRefs.current[i].current.currentTime = 0;
               }
@@ -86,24 +90,42 @@ export default function ProjectsSection() {
               <Card
                 key={i}
                 className={proj.video ? "has-video" : ""}
-                onMouseEnter={proj.video ? handleMouseEnter : undefined}
-                onMouseLeave={proj.video ? handleMouseLeave : undefined}
+                onMouseEnter={!IS_MOBILE && proj.video ? handleMouseEnter : undefined}
+                onMouseLeave={!IS_MOBILE && proj.video ? handleMouseLeave : undefined}
               >
-
                 <MediaContainer>
                   <CardMediaWrapper>
-                    <CardCoverImg src={proj.cover} alt={proj.title} />
-                    {proj.video && (
+                    {/* DESKTOP: Show cover img unless hovering, show video on hover */}
+                    {/* MOBILE: Show video if available, else image */}
+                    {proj.video && IS_MOBILE ? (
                       <CardVideo
                         ref={videoRefs.current[i]}
                         src={proj.video}
                         muted
                         loop
+                        autoPlay
                         playsInline
-                        preload="none"
+                        preload="auto"
                         tabIndex={-1}
                         aria-hidden="true"
+                        style={{ opacity: 1, position: "relative", pointerEvents: "auto" }}
                       />
+                    ) : (
+                      <>
+                        <CardCoverImg src={proj.cover} alt={proj.title} />
+                        {proj.video && (
+                          <CardVideo
+                            ref={videoRefs.current[i]}
+                            src={proj.video}
+                            muted
+                            loop
+                            playsInline
+                            preload="none"
+                            tabIndex={-1}
+                            aria-hidden="true"
+                          />
+                        )}
+                      </>
                     )}
                   </CardMediaWrapper>
                   {proj.imageCredit && <ImageCredit>{proj.imageCredit}</ImageCredit>}
@@ -127,7 +149,6 @@ export default function ProjectsSection() {
                         ))
                       : proj.desc}
                   </CardDesc>
-
                 </CardContent>
               </Card>
             );

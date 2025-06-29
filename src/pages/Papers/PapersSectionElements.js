@@ -1,4 +1,3 @@
-// PapersSectionElements.js
 import styled from "styled-components";
 
 export const Background = styled.div`
@@ -33,9 +32,9 @@ export const SectionTitle = styled.h2`
   font-weight: bold;
   @media (max-width: 900px) {
     font-size: clamp(1.1rem, 7vw, 1.5rem);
-    margin-left: 0;            
-    width: 100%;               
-    text-align: center;       
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
   }
 `;
 
@@ -102,8 +101,6 @@ export const CardVideo = styled.video`
   transition: opacity 0.18s;
 `;
 
-
-// Only add this if you want fade in/out video on hover
 export const Card = styled.div`
   background: #fff;
   border-radius: 18px;
@@ -123,25 +120,23 @@ export const Card = styled.div`
   &:hover ${CardCoverImg} {
     opacity: 0;
   }
-
   &:hover ${CardVideo} {
     opacity: 1;
     pointer-events: auto;
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 900px) {
     flex-direction: column;
-    max-width: 100%;
+    max-width: 100vw;
   }
 `;
 
-
 export const CardContent = styled.div`
   flex: 1 1 auto;
-  padding: 0rem 1.1rem 1rem 1.2rem;
+  padding: 1rem 1.1rem 1rem 1.2rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 `;
 
 export const CardTitleRow = styled.div`

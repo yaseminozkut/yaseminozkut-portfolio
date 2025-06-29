@@ -1,4 +1,4 @@
-// ProjectsSectionElements.js
+// PapersSectionElements.js
 import styled from "styled-components";
 
 export const Background = styled.div`
@@ -29,7 +29,7 @@ export const SectionTitle = styled.h2`
   color: #5cbd95;
   font-size: clamp(1.2rem, 5vw, 2rem);
   margin-left: 5vw;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   font-weight: bold;
   @media (max-width: 900px) {
     font-size: clamp(1.1rem, 7vw, 1.5rem);
@@ -37,7 +37,7 @@ export const SectionTitle = styled.h2`
   }
 `;
 
-export const ProjectsRow = styled.div`
+export const PapersRow = styled.div`
   display: flex;
   flex-direction: row;
   gap: 2.3rem;
@@ -118,15 +118,14 @@ export const Card = styled.div`
     box-shadow: 0 6px 24px 0 rgba(44,62,80,0.13);
   }
 
-  &.has-video:hover ${CardCoverImg} {
+  &:hover ${CardCoverImg} {
     opacity: 0;
   }
 
-  &.has-video:hover ${CardVideo} {
+  &:hover ${CardVideo} {
     opacity: 1;
     pointer-events: auto;
   }
-
 
   @media (max-width: 700px) {
     flex-direction: column;
@@ -137,10 +136,10 @@ export const Card = styled.div`
 
 export const CardContent = styled.div`
   flex: 1 1 auto;
-  padding: 1rem 1.1rem 1rem 1.2rem;
+  padding: 0rem 1.1rem 1rem 1.2rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
 `;
 
 export const CardTitleRow = styled.div`
@@ -188,19 +187,4 @@ export const CardTag = styled.div`
   margin-top: 0.3em;
   font-family: 'JetBrains Mono', Verdana, Arial, sans-serif;
   font-weight: 500;
-`;
-
-export const MediaContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-
-export const ImageCredit = styled.div`
-  font-size: 0.5rem;
-  color: #888;
-  text-align: center;
-  margin-top: 0.4rem;
-  max-width: 250px;
-  line-height: 1.3;
 `;

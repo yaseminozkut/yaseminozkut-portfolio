@@ -9,6 +9,7 @@ import Skills from "../Skills/SkillsSection";
 import Education from "../Education/EducationSection";
 import Experience from "../Experience/ExperienceSection";
 import Projects from "../Projects/ProjectsSection";
+import Papers from "../Papers/PapersSection";
 import Contact from "../Contact/ContactSection";
 
 function ColorfulText({children}) {
@@ -28,6 +29,7 @@ const Homepage = () => {
             <About id='about'/>
             <AboutSkills id='aboutskills'/>
             <Projects/>
+            <Papers/>
             {/*
                 <Education/>
                 <Experience/>

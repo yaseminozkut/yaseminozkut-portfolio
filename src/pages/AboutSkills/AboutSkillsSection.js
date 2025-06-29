@@ -19,7 +19,7 @@ const AboutSkillsSection = () => {
     <ReactLogo flex="1"></ReactLogo>
       <StyledContainer>
         <Left>
-          <StyledTitle>About</StyledTitle>
+          <StyledTitle>About Me</StyledTitle>
           <StyledText>
             I'm a second-year M.S. student in Electrical and Computer Engineering at The Ohio State University, working on deep learning and multi-modal learning models in&nbsp;
             <StyledLink

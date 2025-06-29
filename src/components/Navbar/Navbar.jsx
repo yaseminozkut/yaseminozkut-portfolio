@@ -28,13 +28,10 @@ export const Navbar = ( {toggle} ) => {
               <NavLinks to = 'aboutskills' smooth={true} duration={500} spy={true} exact='true' offset={-60}>Skills</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to = 'education' smooth={true} duration={500} spy={true} exact='true' offset={-60}>Education</NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to = 'experience' smooth={true} duration={500} spy={true} exact='true' offset={-60}>Experience</NavLinks>
-            </NavItem>
-            <NavItem>
               <NavLinks to = 'projects' smooth={true} duration={500} spy={true} exact='true' offset={-60}>Projects</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to = 'papers' smooth={true} duration={500} spy={true} exact='true' offset={-60}>Papers</NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks to = 'contact' smooth={true} duration={500} spy={true} exact='true' offset={-80}>Contact</NavLinks>

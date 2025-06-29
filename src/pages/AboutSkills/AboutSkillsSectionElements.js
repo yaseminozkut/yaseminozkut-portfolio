@@ -39,11 +39,11 @@ export const Left = styled.div`
     padding-left: 5vw;
 
     @media (max-width: 900px) {
-      max-width: 100vw;
+      max-width: 86vw;
       width: 90%;
       margin: 0 auto 2vw auto;
-      padding-left: 5vw;
-      padding-right: 5vw;
+      padding-left: 7vw;
+      padding-right: 7vw;
     }
 `;
 
@@ -58,9 +58,10 @@ export const Right = styled.div`
     justify-content: flex-start;
 
     @media (max-width: 900px) {
-      width: 90%;
+      width: 86%;
       min-width: 0;
-      padding-left: 5vw;
+      padding-left: 7vw;
+      padding-right: 7vw;
     }
 `;
 
@@ -96,7 +97,7 @@ export const StyledText = styled.p`
   word-break: break-word;
   text-align: justify;
   @media (max-width: 900px) {
-    font-size: 0.7rem;
+    font-size: 1rem;
     margin-bottom: 1.2rem;
   }
 `;
@@ -161,7 +162,7 @@ export const StyledCircle = styled.div`
     color: #ececec;
   }
   @media (max-width: 900px) {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     padding: 0.2em 0.5em;
   }
 `;

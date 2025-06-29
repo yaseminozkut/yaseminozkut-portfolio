@@ -25,7 +25,9 @@ const paperList = [
         <i>Nature Scientific Data 2025 (Soon)</i>
         <br />
         <a
-          href="/projects/erdes-3d"
+          href="https://osupcvlab.github.io/ERDES-3D/"
+          target="_blank"
+          rel="noopener noreferrer"
           style={{ color: "#4400e6", textDecoration: "none" }}
         >
           Project page

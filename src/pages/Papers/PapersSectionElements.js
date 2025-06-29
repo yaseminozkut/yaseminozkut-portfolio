@@ -108,7 +108,6 @@ export const Card = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
-  max-width: 1100px;
   overflow: hidden;
   align-items: stretch;
   transition: box-shadow 0.18s;
@@ -127,7 +126,6 @@ export const Card = styled.div`
 
   @media (max-width: 900px) {
     flex-direction: column;
-    max-width: 100vw;
   }
 `;
 

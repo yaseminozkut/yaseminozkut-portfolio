@@ -7,7 +7,6 @@ import {
   StyledTitle,
   StyledText,
   StyledLink,
-  Grid,
   Cols,
   StyledCircle
 } from "./AboutSkillsSectionElements";
@@ -15,10 +14,10 @@ import {ReactComponent as ReactLogo} from '../../img/wave.svg';
 
 const AboutSkillsSection = () => {
   return (
-    <Background id="aboutskills">
+    <Background>
     <ReactLogo flex="1"></ReactLogo>
       <StyledContainer>
-        <Left>
+        <Left id="about">
           <StyledTitle>About Me</StyledTitle>
           <StyledText>
             I'm a second-year M.S. student in Electrical and Computer Engineering at The Ohio State University, working on deep learning and multi-modal learning models in&nbsp;
@@ -49,7 +48,7 @@ const AboutSkillsSection = () => {
             , tackling flood analysis using satellite imagery with neuromorphic computing. On the side, I'm exploring agentic LLMs (LangChain, LangGraph) and building AI-powered iOS apps with friends. I love picking up new topics and enjoy both independent and team projects.
           </StyledText>
         </Left>
-        <Right>
+        <Right id="skills">
           <StyledTitle>Highlighted Skills</StyledTitle>
             <Cols>
               <StyledCircle>Python</StyledCircle>

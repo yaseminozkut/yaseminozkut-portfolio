@@ -15,7 +15,7 @@ const paperList = [
   {
     cover: eyeCover,
     video: eyeVideo,
-    title: "ERDES: A Benchmark Dataset for Retinal Detachment Classification in Spatiotemporal Ocular Ultrasound (Ongoing)",
+    title: "ERDES: A Benchmark Dataset for Retinal Detachment Classification in Spatiotemporal Ocular Ultrasound",
     subtitle: (
                 <>
                   Pouyan Navard, <b>Yasemin Ozkut</b>, Srikar Adhikari, Alper Yilmaz
@@ -46,8 +46,8 @@ export default function PapersSection() {
   }
 
   return (
-    <Background>
-      <SectionContainer id="papers">
+    <Background id="papers">
+      <SectionContainer>
         <SectionTitle>Papers</SectionTitle>
         <PapersRow>
           {paperList.map((proj, i) => {

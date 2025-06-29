@@ -52,6 +52,7 @@ export const ProjectsRow = styled.div`
     gap: 1.2rem;
     margin-left: 6vw;
     margin-right: 6vw;
+    margin-bottom: -1.2rem;
   }
 `;
 

@@ -29,13 +29,13 @@ export const SectionTitle = styled.h2`
   color: #5cbd95;
   font-size: clamp(1.2rem, 5vw, 2rem);
   margin-left: 5vw;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   font-weight: bold;
   @media (max-width: 900px) {
     font-size: clamp(1.1rem, 7vw, 1.5rem);
-    margin-left: 0;            // 🧹 Remove left margin
-    width: 100%;               // 🧩 Make it take full width
-    text-align: center;        // 🎯 Center the text
+    margin-left: 0;            
+    width: 100%;               
+    text-align: center;       
   }
 `;
 

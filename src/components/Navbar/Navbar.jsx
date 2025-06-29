@@ -22,19 +22,19 @@ export const Navbar = ( {toggle} ) => {
 
           <NavMenu>
             <NavItem>
-              <NavLinks to = 'aboutskills' smooth={true} duration={500} spy={true} exact='true' offset={-80} >About</NavLinks>
+              <NavLinks to = 'about' activeClass="active" smooth={true} duration={500} spy={true} exact='true' offset={-80} >About</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to = 'aboutskills' smooth={true} duration={500} spy={true} exact='true' offset={-60}>Skills</NavLinks>
+              <NavLinks to = 'skills' activeClass="active" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Skills</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to = 'projects' smooth={true} duration={500} spy={true} exact='true' offset={-60}>Projects</NavLinks>
+              <NavLinks to = 'projects' activeClass="active" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Projects</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to = 'papers' smooth={true} duration={500} spy={true} exact='true' offset={-60}>Papers</NavLinks>
+              <NavLinks to = 'papers' activeClass="active" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Papers</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to = 'contact' smooth={true} duration={500} spy={true} exact='true' offset={-80}>Contact</NavLinks>
+              <NavLinks to = 'contact' activeClass="active" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Contact</NavLinks>
             </NavItem>
           </NavMenu>
         </NavbarContainer>

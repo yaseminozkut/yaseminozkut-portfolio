@@ -64,8 +64,8 @@ export default function ProjectsSection() {
   }
 
   return (
-    <Background>
-      <SectionContainer id="projects">
+    <Background id="projects">
+      <SectionContainer>
         <SectionTitle>Projects</SectionTitle>
         <ProjectsRow>
           {projectList.map((proj, i) => {

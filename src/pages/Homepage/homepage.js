@@ -1,20 +1,11 @@
 import React, {useState} from "react";
-import { Background, StyledContainer, StyledImg, StyledText, StyledTitle } from "./HomepageElements";
-import { Typewriter } from 'react-simple-typewriter'
 import Sidebar from "../../components/Sidebar/Sidebar";
 import { Navbar } from "../../components/Navbar/Navbar";
 import About from "../About/AboutSection";
 import AboutSkills from "../AboutSkills/AboutSkillsSection";
-import Skills from "../Skills/SkillsSection";
-import Education from "../Education/EducationSection";
-import Experience from "../Experience/ExperienceSection";
 import Projects from "../Projects/ProjectsSection";
 import Papers from "../Papers/PapersSection";
 import Contact from "../Contact/ContactSection";
-
-function ColorfulText({children}) {
-    return <span style={{color: '#cbfe51'}}>{children}</span>;
-  }
 
 const Homepage = () => {
     const [isOpen, setIsOpen] =  useState(false)
@@ -30,6 +21,7 @@ const Homepage = () => {
             <AboutSkills id='aboutskills'/>
             <Projects/>
             <Papers/>
+            <Contact/>
             {/*
                 <Education/>
                 <Experience/>

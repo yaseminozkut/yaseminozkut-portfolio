@@ -11,8 +11,8 @@ const ProfileFlipContainer = styled.div`
   height: 130px;
   margin: -8% auto 0 auto;
   @media (max-width: 900px){
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
   }
 `;
 
@@ -34,8 +34,8 @@ const FlipFace = styled.img`
   backface-visibility: hidden;
   border: 2px black;
   @media (max-width: 900px){
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
   }
   /* Layered shadow for strong, realistic 3D effect: */
   box-shadow:

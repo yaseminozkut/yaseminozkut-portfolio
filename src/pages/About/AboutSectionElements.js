@@ -71,12 +71,13 @@ export const StyledTitle = styled.p`
   text-overflow: ellipsis;
   text-align: left;
   font-family: 'JetBrains Mono', Verdana, Helvetica, Arial, Sans-serif;
-
   @media (max-width: 900px) {
-    text-align: left;
-    white-space: normal;
     font-size: clamp(1.5rem, 7vw, 1.45rem);
     margin-bottom: -0.1rem;
+    margin-left: 0;            // 🧹 Remove left margin
+    width: 100%;               // 🧩 Make it take full width
+    text-align: center;        // 🎯 Center the text
+    white-space: normal;
   }
 `;
 
@@ -88,8 +89,11 @@ export const StyledSubtitle = styled.p`
   font-family: 'JetBrains Mono', Verdana, Helvetica, Arial, Sans-serif;
 
   @media (max-width: 900px) {
-    text-align: left;
+    margin-left: 0;  
     font-size: clamp(0.85rem, 5vw, 0.9rem);
+    text-align: center;        // 🎯 Center the text
+    white-space: normal;
+    width: 100%; 
   }
 `;
 

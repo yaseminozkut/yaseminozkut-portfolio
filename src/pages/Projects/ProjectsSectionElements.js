@@ -111,7 +111,8 @@ export const Card = styled.div`
   box-shadow: 0 2px 10px 0 rgba(44,62,80,0.09);
   display: flex;
   flex-direction: row;
-  width: 100%;
+  max-width: 100%;        
+  min-height: 170px;
   overflow: hidden;
   align-items: stretch;
   transition: box-shadow 0.18s;

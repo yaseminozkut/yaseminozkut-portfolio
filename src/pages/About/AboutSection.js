@@ -13,7 +13,7 @@ function ColorfulText({ children }) {
 }
 
 const About = () => (
-  <Background id="about">
+  <Background id="intro">
     <AboutRow>
       <FlippingProfileContainer>
         <FlippingProfile />

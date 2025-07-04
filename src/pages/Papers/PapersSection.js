@@ -18,6 +18,7 @@ const paperList = [
     cover: eyeCover,
     video: eyeVideo,
     title: "ERDES: A Benchmark Dataset for Retinal Detachment Classification in Spatiotemporal Ocular Ultrasound",
+    github: "https://github.com/OSUPCVLab/ERDES-3D",
     subtitle: (
       <>
         Pouyan Navard, <b>Yasemin Ozkut</b>, Srikar Adhikari, Alper Yilmaz
@@ -34,9 +35,21 @@ const paperList = [
         </a>
       </>
     ),
-    desc: "",
+    desc:
+      "Led writing the paper and data-split tooling, while collaborating with a colleague who supplied the initial Lightning-Hydra codebase.",
+    bullets: [
+      "Drafted the <b>Overleaf manuscript</b> and a comprehensive <b>literature review</b> (from papers provided by our clinician author, Dr. Adhikari).",
+      "Wrote <b>Background / Related-Work</b> sections and contributed writing all the remaining sections.",
+      "Wrote Python script to generate <b>stratified train/val/test CSVs</b> for two binary tasks:<br>&nbsp;&nbsp;1. Normal vs Retinal Detachment<br>&nbsp;&nbsp;2. Macula Detached vs Macula Intact",
+      "Adopting & debugging the <b>Lightning-Hydra</b> template and pipeline, built by my colleague",
+      "Implementing experimentation phase with training and testing for 8 different models with <b>hyper-parameter tuning</b> (epochs, LR, optimiser, batch size)."
+    ],
+    footnote:
+      "Acknowledgement – Pouyan Navard provided the original Lightning-Hydra template, baseline models (EfficientNet, ResNet3D, SwinUnetR, UNet3D, Unet++, ViT, Vnet, UnetR), dataset, and pipeline."
   },
 ];
+
+
 
 export default function PapersSection() {
   const videoRefs = useRef([]);
@@ -116,7 +129,37 @@ export default function PapersSection() {
                     {proj.tag && <CardTag>{proj.tag}</CardTag>}
                   </CardTitleRow>
                   <CardSubtitle>{proj.subtitle}</CardSubtitle>
-                  <CardDesc>{proj.desc}</CardDesc>
+                  <CardDesc>
+  {/* brief intro paragraph, if any */}
+  {proj.desc && <p style={{ margin: "0.4em 0" }}>{proj.desc}</p>}
+
+  {/* bullet list */}
+  {proj.bullets && (
+    <ul
+      className="list-disc list-inside leading-tight space-y-1 max-w-prose"
+      style={{ margin: "0.4em 0 0.6em" }}
+    >
+      {proj.bullets.map((item, idx) => (
+        <li key={idx} dangerouslySetInnerHTML={{ __html: item }} />
+      ))}
+    </ul>
+  )}
+
+  {/* muted footnote */}
+  {proj.footnote && (
+    <p
+      style={{
+        fontSize: "0.8em",
+        color: "#666",
+        fontStyle: "italic",
+        marginTop: "0.4em"
+      }}
+    >
+      {proj.footnote}
+    </p>
+  )}
+</CardDesc>
+
                 </CardContent>
               </Card>
             );

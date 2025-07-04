@@ -1,18 +1,11 @@
 import React, {useState} from "react";
-import { Background, StyledContainer, StyledImg, StyledText, StyledTitle } from "./HomepageElements";
-import { Typewriter } from 'react-simple-typewriter'
 import Sidebar from "../../components/Sidebar/Sidebar";
 import { Navbar } from "../../components/Navbar/Navbar";
 import About from "../About/AboutSection";
-import Skills from "../Skills/SkillsSection";
-import Education from "../Education/EducationSection";
-import Experience from "../Experience/ExperienceSection";
+import AboutSkills from "../AboutSkills/AboutSkillsSection";
 import Projects from "../Projects/ProjectsSection";
+import Papers from "../Papers/PapersSection";
 import Contact from "../Contact/ContactSection";
-
-function ColorfulText({children}) {
-    return <span style={{color: '#cbfe51'}}>{children}</span>;
-  }
 
 const Homepage = () => {
     const [isOpen, setIsOpen] =  useState(false)
@@ -25,11 +18,17 @@ const Homepage = () => {
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle} />
             <About id='about'/>
-            <Skills id='skills'/>
-            <Education/>
-            <Experience/>
+            <AboutSkills id='aboutskills'/>
             <Projects/>
+            <Papers/>
             <Contact/>
+            {/*
+                <Education/>
+                <Experience/>
+                <Projects/>
+                <Contact/>
+            */}
+            
 
         </>
         /*

@@ -1,53 +1,160 @@
-import React from "react";
+import React, { useRef } from "react";
 import {
-  Background,
-  IconLink,
-  StyledContainer,
-  StyledTitle,
-  TimelineContainer,
+  SectionContainer, SectionTitle, ProjectsRow, Card,
+  CardMediaWrapper, CardCoverImg, CardVideo,
+  CardContent, CardTitleRow, CardTitle,
+  GithubIcon, CardSubtitle, CardDesc, CardTag, Background, ImageCredit, MediaContainer
 } from "./ProjectsSectionElements";
-import VerticalLineContent from "../../components/Timeline/VerticalLineContent";
-import VerticalLineWrapper from "../../components/Timeline/VerticalLineWrapper";
-import {FaGithub} from 'react-icons/fa';
+import { FaGithub } from "react-icons/fa";
 
-const Projects = () => {
+import daiLabVideo from "../../img/dai-labor-demo.mp4";
+import daiLabCover from "../../img/dai-labor-cover.png";
+import chestCover from "../../img/chest-cover.png";
+import floodCover from "../../img/flood.jpg";
+
+const projectList = [
+  {
+    cover: daiLabCover,
+    video: daiLabVideo,
+    title: "Live Object Detection",
+    github: "https://github.com/yaseminozkut/Smart-Kitchen",
+    subtitle: "DAI-Labor, TU Berlin",
+    desc: "I built a real-time object detection system for German supermarket products using YOLOv8m and webcam input. I collected and annotated the the Freiburg Groceries Dataset and augmented it via Roboflow. I achieved 87.2% accuracy with YOLOv8m model. Additionally, I experimented it with a Keras-OCR pipeline to interpret German-labeled packaging. The system is designed to eventually guide users to the correct storage locations based on recognized items in the kitchen.",
+  },
+  {
+    cover: chestCover,
+    video: null,
+    title: "Chest X-Ray VLM (Ongoing)",
+    subtitle: "PCVLab, OSU",
+    desc: "I'm developing a multimodal vision-language model (VLM) for chest X-ray interpretation, combining image data with associated radiology reports. The project uses the MIMIC-CXR dataset, which I curated down to over 50,000 high-quality studies containing both frontal and lateral views along with findings and impressions.\n\n The system is designed to understand and generate clinical reports by learning joint representations across image and text modalities. I'm fine-tuning large models (e.g., LLaMA 3.2, ViT, and GPT variants) and experimenting with masked image patching and multi-view fusion techniques. To enable scalable training, I've optimized the pipeline using PyTorch, Hugging Face Accelerate, and SLURM across multi-GPU HPC clusters.",
+    imageCredit: "Image Credit: Figure 1 from Johnson et al., MIMIC‑CXR, a de‑identified publicly available database of chest radiographs with free‑text reports, Scientific Data 6:317 (2019). Licensed under CC BY 4.0."
+  },
+  {
+    cover: floodCover,
+    video: null,
+    title: "NASA / Beyond the Algorithm Challenge (Ongoing)",
+    subtitle: "PCVLab, OSU",
+    desc: (
+            <span> We are participating in NASA’s Beyond the Algorithm Challenge, focused on applying unconventional computing methods to improve rapid flood impact assessment. Our work explores satellite data and scalable model design for real-world disaster response. Due to the ongoing nature of the competition, technical details will be shared after final submissions.
+              <br /><br />
+              Challenge website:{" "}
+              <a
+                href="https://www.nasa-beyond-challenge.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "#4400e6", textDecoration: "underline" }}
+              >
+                https://www.nasa-beyond-challenge.org
+              </a>
+            </span>
+          ),
+    imageCredit: "Image Credit: NASA / Beyond the Algorithm Challenge"
+  }
+
+];
+
+// Utility to check for mobile
+const IS_MOBILE = typeof window !== "undefined" && /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+export default function ProjectsSection() {
+  const videoRefs = useRef([]);
+
+  // Initialize refs if not already created
+  if (videoRefs.current.length !== projectList.length) {
+    videoRefs.current = Array(projectList.length)
+      .fill()
+      .map((_, i) => videoRefs.current[i] || React.createRef());
+  }
+
   return (
     <Background id="projects">
-      <StyledContainer>
-        <StyledTitle>Project Highlights</StyledTitle>
-        <TimelineContainer>
-          <VerticalLineWrapper>
-            <VerticalLineContent position="left">
-              <strong style={{"font-size": "1.5rem"}}>Agile Full Stack Software Development Project <IconLink> <a href='https://github.com/yaseminozkut/Team28---Make-Football-Great-Again---MFGA.git' target="_blank"><FaGithub style={{"color": "black", "size": "lg"}}></FaGithub></a></IconLink> </strong>
-              <p style={{"font-size": "0.7rem", "fontFamily": "Sans-serif", "color": "grey"}}>October 2022-January 2023</p>
-              <p style={{"font-size": "1rem", "padding-left": "2rem", "fontFamily": "Sans-serif", color: "#555"}}> ● Implemented a full stack web application for Turkish Football Federation with MongoDB, Express.JS, React.JS, Node.JS. </p>
-              <p style={{"font-size": "1rem", "padding-left": "2rem", "fontFamily": "Sans-serif", color: "#555"}}> ● Designed a better Turkish Football Federation site including statistics, data for visualization, better referee assignments, and better GUI design. </p>
-              <p style={{"font-size": "1rem", "padding-left": "2rem", "fontFamily": "Sans-serif", color: "#555"}}> ● Learned the concepts of version control, scrum meetings, handling sprints, deployment; enhanced teamwork skills; and learned full stack web development from scratch. </p>
-              <p style={{"font-size": "1rem", "padding-left": "2rem", "fontFamily": "Sans-serif", color: "#555"}}> ● Done automated testing with Selenium and API documentation with Swagger. </p>
-            </VerticalLineContent>
-            <VerticalLineContent position="left">
-              <strong style={{"font-size": "1.5rem"}}>Computer Networks Course Client-Server Application Project <IconLink> <a href='https://github.com/yaseminozkut/Client-Server-Multiplayer-Quiz-Game-Socket-Programming.git' target="_blank"><FaGithub style={{"color": "black", "size": "lg"}}></FaGithub></a></IconLink></strong>
-              <p style={{"font-size": "0.7rem", "fontFamily": "Sans-serif", "color": "grey"}}>October 2022-January 2023</p>
-              <p style={{"font-size": "1rem", "padding-left": "2rem", "fontFamily": "Sans-serif", color: "#555"}}> ● Implemented client-server multiple player simple quiz game GUI application using C# and TCP sockets. </p>
-            </VerticalLineContent>
-            <VerticalLineContent position="left">
-              <strong style={{"font-size": "1.5rem"}}>Mobile Programming Course Social Media App Term Project <IconLink> <a href='https://github.com/yaseminozkut/CS310-Meta-Social-Media-Group27.git' target="_blank"><FaGithub style={{"color": "black", "size": "lg"}}></FaGithub></a></IconLink></strong>
-              <p style={{"font-size": "0.7rem", "fontFamily": "Sans-serif", "color": "grey"}}>February 2022-June 2022</p>
-              <p style={{"font-size": "1rem", "padding-left": "2rem", "fontFamily": "Sans-serif", color: "#555"}}> ● Implemented a Social Media Application with Flutter. </p>
-              <p style={{"font-size": "1rem", "padding-left": "2rem", "fontFamily": "Sans-serif", color: "#555"}}> ● Understand the logic behind interface design, validation checks, Firebase Analytics, Firebase Crashlytics, Firebase core, authentication etc. </p>
-              <p style={{"font-size": "1rem", "padding-left": "2rem", "fontFamily": "Sans-serif", color: "#555"}}> ● Create a well-designed social media interface and link it to Firebase backend service. </p>
-              <p style={{"font-size": "1rem", "padding-left": "2rem", "fontFamily": "Sans-serif", color: "#555"}}> ● Enhanced the team-work skills. </p>
-            </VerticalLineContent>
-            <VerticalLineContent position="left">
-              <strong style={{"font-size": "1.5rem"}}>Data Science Course Term Project, Sabancı University 	<IconLink> <a href='https://github.com/yaseminozkut/CS210-Data-Science/blob/main/IMDB%20Movies%20Project/Project_Final_Report.ipynb' target="_blank"><FaGithub style={{"color": "black", "size": "lg"}}></FaGithub></a></IconLink></strong>
-              <p style={{"font-size": "0.7rem", "fontFamily": "Sans-serif", "color": "grey"}}>November 2021-December 2021</p>
-              <p style={{"font-size": "1rem", "padding-left": "2rem", "fontFamily": "Sans-serif", color: "#555"}}> ● Learned more about exploratory data analysis, hypothesis testing, and machine learning models for data science.</p>
-              <p style={{"font-size": "1rem", "padding-left": "2rem", "fontFamily": "Sans-serif", color: "#555"}}> ● Worked on a group term project about predicting the Metascores of the movies with Python using different machine learning models which were linear regression, random forest, and kNN models.  </p>
-            </VerticalLineContent>
-          </VerticalLineWrapper>
-        </TimelineContainer>
-      </StyledContainer>
+      <SectionContainer>
+        <SectionTitle>Projects</SectionTitle>
+        <ProjectsRow>
+          {projectList.map((proj, i) => {
+            // DESKTOP: hover handlers
+            const handleMouseEnter = () => {
+              if (!IS_MOBILE && videoRefs.current[i]?.current) {
+                videoRefs.current[i].current.currentTime = 0;
+                videoRefs.current[i].current.play();
+              }
+            };
+            const handleMouseLeave = () => {
+              if (!IS_MOBILE && videoRefs.current[i]?.current) {
+                videoRefs.current[i].current.pause();
+                videoRefs.current[i].current.currentTime = 0;
+              }
+            };
+
+            return (
+              <Card
+                key={i}
+                className={proj.video ? "has-video" : ""}
+                onMouseEnter={!IS_MOBILE && proj.video ? handleMouseEnter : undefined}
+                onMouseLeave={!IS_MOBILE && proj.video ? handleMouseLeave : undefined}
+              >
+                <MediaContainer>
+                  <CardMediaWrapper>
+                    {/* DESKTOP: Show cover img unless hovering, show video on hover */}
+                    {/* MOBILE: Show video if available, else image */}
+                    {proj.video && IS_MOBILE ? (
+                      <CardVideo
+                        ref={videoRefs.current[i]}
+                        src={proj.video}
+                        muted
+                        loop
+                        autoPlay
+                        playsInline
+                        preload="auto"
+                        tabIndex={-1}
+                        aria-hidden="true"
+                        style={{ opacity: 1, position: "relative", pointerEvents: "auto" }}
+                      />
+                    ) : (
+                      <>
+                        <CardCoverImg src={proj.cover} alt={proj.title} />
+                        {proj.video && (
+                          <CardVideo
+                            ref={videoRefs.current[i]}
+                            src={proj.video}
+                            muted
+                            loop
+                            playsInline
+                            preload="none"
+                            tabIndex={-1}
+                            aria-hidden="true"
+                          />
+                        )}
+                      </>
+                    )}
+                  </CardMediaWrapper>
+                  {proj.imageCredit && <ImageCredit>{proj.imageCredit}</ImageCredit>}
+                </MediaContainer>
+
+                <CardContent>
+                  <CardTitleRow>
+                    <CardTitle>{proj.title}</CardTitle>
+                    {proj.github &&
+                      <GithubIcon href={proj.github} target="_blank" rel="noopener noreferrer">
+                        <FaGithub />
+                      </GithubIcon>
+                    }
+                    {proj.tag && <CardTag>{proj.tag}</CardTag>}
+                  </CardTitleRow>
+                  <CardSubtitle>{proj.subtitle}</CardSubtitle>
+                  <CardDesc>
+                    {typeof proj.desc === "string"
+                      ? proj.desc.split('\n\n').map((paragraph, idx) => (
+                          <p key={idx} style={{ margin: "0.4em 0" }}>{paragraph.trim()}</p>
+                        ))
+                      : proj.desc}
+                  </CardDesc>
+                </CardContent>
+              </Card>
+            );
+          })}
+        </ProjectsRow>
+      </SectionContainer>
     </Background>
   );
-};
-export default Projects;
+}

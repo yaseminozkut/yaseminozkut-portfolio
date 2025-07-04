@@ -5,34 +5,59 @@ export const Background = styled.div`
     background: #4400e6;
     display: flex;
     position: relative;
-    height: 450px;
+    height: 200px;
     z-index: 1;
     padding: 0 30px;
+    @media (max-width: 900px) {
+      height: 150px;
+      padding-bottom: 5%;    
+    }
 `;
 
 export const StyledImg = styled.img`
   position: absolute;
+  height: 10vw;
+  width: 10vw;     
   top: 5%;
-  height: 25vw;
-  width: 25vw;
-  right: 1%;
+  right: 10%;
+  @media (max-width: 900px) {
+    height: 12vw;
+    width: 12vw;   
+    right: 15%;  
+  }
+  
 `;
 
 export const StyledContainer = styled.div`
   position: relative;
-  left: 6%;
+  left: 13%;
   width: 60rem;
-  height: 20rem;
+  height: 200px;
   font-family: 'JetBrains Mono', Roboto,"proxima nova bold","Helvetica Neue",Helvetica,Arial,Sans-serif;
+  @media (max-width: 900px) {
+    font-size: clamp(1.1rem, 7vw, 1.5rem);
+    left: 0%;
+    margin-left: 0;            
+    width: 100%;               
+    text-align: center;
+    height: 150px;
+    padding-bottom: 5%;           
+  }
 `;
 
 export const StyledTitle = styled.p`
   position: relative;
-  font-size: 4.5rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: #ececec;
   width: fit-content;
   font-family: 'JetBrains Mono', Roboto,"proxima nova bold","Helvetica Neue",Helvetica,Arial,Sans-serif;
+  @media (max-width: 900px) {
+    font-size: clamp(1.1rem, 7vw, 1.5rem);
+    margin-left: 0;            
+    width: 100%;               
+    text-align: center;       
+  }
 `;
 
 export const StyledText = styled.p`
@@ -41,6 +66,10 @@ export const StyledText = styled.p`
 
   color: #ececec;
   font-family: 'JetBrains Mono', Roboto,"proxima nova bold","Helvetica Neue",Helvetica,Arial,Sans-serif;
+  @media (max-width: 900px) {          
+    text-align: center;
+    justify-content: center;       
+  }
 `;
 
 export const ResumeButton = styled(Button)`
@@ -88,4 +117,17 @@ export const IconLink = styled.div`
       transform: translateY(-2px)
     }
   }
+`;
+
+export const ContactRow = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: flex-start; /* left align by default */
+
+  @media (max-width: 900px) {
+    justify-content: center;  /* center on small screens */
+  }
+
+  margin-top: 0.4rem;
 `;

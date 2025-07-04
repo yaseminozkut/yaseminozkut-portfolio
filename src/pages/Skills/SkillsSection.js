@@ -1,7 +1,5 @@
 import React from 'react';
-import { Background, StyledCircle, StyledContainer, StyledImg, StyledText, StyledTitle, Grid, Cols, Cols2} from "./SkillsSectionElements";
-import { Typewriter } from 'react-simple-typewriter';
-import wave from "../../img/wave.svg";
+import { Background, StyledCircle, StyledContainer, StyledText, StyledTitle, Grid, Cols} from "./SkillsSectionElements";
 import {ReactComponent as ReactLogo} from '../../img/wave.svg';
 
 const Skills = () => {
@@ -10,49 +8,76 @@ const Skills = () => {
     
         <Background id='skills'>
             <StyledContainer>
-            <ReactLogo flex="1"></ReactLogo>
+                <ReactLogo flex="1"></ReactLogo>
                 <StyledTitle>Skills</StyledTitle>
                 <Grid>
                     <StyledText size='md'>Programming Languages:</StyledText>
                     <Cols>
-                        <StyledCircle>C++</StyledCircle>
                         <StyledCircle>Python</StyledCircle>
+                        <StyledCircle>C++</StyledCircle>
+                        <StyledCircle>C</StyledCircle>
                         <StyledCircle>C#</StyledCircle>
-                        <StyledCircle>Dart</StyledCircle>
+                        {/* ... */}
                     </Cols>
                 </Grid>
                 <Grid>
-                    <StyledText>Front-End:</StyledText>
+                    <StyledText>Frameworks & Libraries:</StyledText>
                     <Cols>
-                        <StyledCircle>React.JS</StyledCircle>
+                        <StyledCircle>PyTorch</StyledCircle>
+                        <StyledCircle>CUDA</StyledCircle>
+                        <StyledCircle>YOLO</StyledCircle>
+                        <StyledCircle>Keras-OCR</StyledCircle>
+                        <StyledCircle>OpenCV</StyledCircle>
+                        <StyledCircle>Hugging Face</StyledCircle>
+                        <StyledCircle>Pandas</StyledCircle>
+                        <StyledCircle>NumPy</StyledCircle>
+                        <StyledCircle>Scikit-learn</StyledCircle>
+                        <StyledCircle>Matplotlib</StyledCircle>
+                    </Cols>
+                </Grid>
+                <Grid>
+                    <StyledText>Developer Tools:</StyledText>
+                    <Cols style={{width: "90%"}}>
+                        <StyledCircle>Git</StyledCircle>
+                        <StyledCircle>SLURM</StyledCircle>
+                        <StyledCircle>Linux (CLI)</StyledCircle>
+                        <StyledCircle>LaTeX</StyledCircle>
+                        <StyledCircle>Gephi</StyledCircle>
+                        <StyledCircle>Unity</StyledCircle>
+                        <StyledCircle>Postman</StyledCircle>
+                    </Cols>
+                </Grid>
+                <Grid>
+                    <StyledText>Techniques:</StyledText>
+                    <Cols>
+                        <StyledCircle>Deep/Machine Learning</StyledCircle>
+                        <StyledCircle>Distributed Training</StyledCircle>
+                        <StyledCircle>Multi-modal Learning</StyledCircle>
+                        <StyledCircle>Vision-Language Models</StyledCircle>
+                        <StyledCircle>Object Detection</StyledCircle>
+                        <StyledCircle>Segmentation</StyledCircle>
+                        <StyledCircle>Image Processing</StyledCircle>
+                        <StyledCircle>Computer Vision</StyledCircle>
+                        <StyledCircle>Text Recognition</StyledCircle>
+                        <StyledCircle>Network Analysis</StyledCircle>
+                        <StyledCircle>Data Visualization</StyledCircle>
+                        <StyledCircle>OOP</StyledCircle>
+                        <StyledCircle>Data Structures</StyledCircle>
+                        <StyledCircle>Algorithms</StyledCircle>
+
+                    </Cols>
+                </Grid>
+                <Grid>
+                    <StyledText>Software & Web:</StyledText>
+                    <Cols>
+                        <StyledCircle>React.js</StyledCircle>
+                        <StyledCircle>CSS</StyledCircle>
                         <StyledCircle>Flutter</StyledCircle>
-                    </Cols>
-                </Grid>
-                <Grid>
-                    <StyledText>Back-End:</StyledText>
-                    <Cols>
-                        <StyledCircle>Node.JS</StyledCircle>
-                        <StyledCircle>Express.JS</StyledCircle>
-                    </Cols>
-                </Grid>
-                <Grid>
-                    <StyledText>Database:</StyledText>
-                    <Cols>
+                        <StyledCircle>Node.js</StyledCircle>
+                        <StyledCircle>Express.js</StyledCircle>
                         <StyledCircle>MongoDB</StyledCircle>
                         <StyledCircle>SQL</StyledCircle>
                         <StyledCircle>Firebase</StyledCircle>
-                    </Cols>
-                </Grid>
-                <Grid>
-                    <StyledText>General:</StyledText>
-                    <Cols style={{width: "90%"}}>
-                        <StyledCircle>Git</StyledCircle>
-                        <StyledCircle>Postman</StyledCircle>
-                        <StyledCircle>Data Structures</StyledCircle>
-                        <StyledCircle>Algorithms</StyledCircle>
-                        <StyledCircle>OOP</StyledCircle>
-                        <StyledCircle>Web Developement</StyledCircle>
-                        <StyledCircle>Socket Programming</StyledCircle>
                     </Cols>
                 </Grid>
             </StyledContainer>

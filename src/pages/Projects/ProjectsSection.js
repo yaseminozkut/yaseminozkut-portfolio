@@ -11,6 +11,8 @@ import daiLabVideo from "../../img/dai-labor-demo.mp4";
 import daiLabCover from "../../img/dai-labor-cover.png";
 import chestCover from "../../img/chest-cover.png";
 import floodCover from "../../img/flood.jpg";
+import reidCover from "../../img/reid_cover.png";
+import reidVideo from "../../img/reid_video.mov";
 
 const projectList = [
   {
@@ -25,6 +27,24 @@ const projectList = [
       "Collected and annotated the the Freiburg Groceries Dataset and augmented it via <b>Roboflow</b>",
       "Achieved <b>87.2% accuracy</b> with <b>YOLOv8m</b> model",
       "Experimented with a <b>Keras-OCR</b> pipeline I implemented to interpret German-labeled packaging",
+    ],
+  },
+  {
+    cover: reidCover,
+    video: reidVideo,
+    title: "LLM-Driven Person Tracking & Re-Identification (ReID) via LangGraph (Ongoing)",
+    subtitle: "Personal Project",
+    desc:
+      "Building a GPU-powered, <b>LangGraph</b>-orchestrated pipeline that <b>detects, tracks, and re-identifies</b> people across multiple videos—then leverages <b>vision-language embeddings</b> and <b>LLM reasoning</b> to link identities.",
+    bullets: [
+      "Designed <b>LangGraph</b> workflow with persistent identity memory and tool-calling nodes.",
+      "Implemented a <b>YOLOv8 + ByteTrack</b> tool that crops each detected person and tags them with per-frame local IDs.",
+      "Built CLIP embedder that extracts vision features from person crops.",
+      "Implemented a memory store of {global_id, embedding} objects, enabling fast lookup across frames.",
+      "Using embedding-similarity matching to assign global IDs or create new ones.",
+      "Building parallel branches that route crops to <b>CLIP</b> embedder and <b>MoonDream</b> VLM captioner.",
+      "Implementing <b>LLM agent (Mistral-7B via Ollama)</b> that reasons over descriptions to shortlist candidates.",
+      "Building a <b>Gradio</b> UI for interactive inference."
     ],
   },
   {
@@ -159,7 +179,12 @@ export default function ProjectsSection() {
                   <CardSubtitle>{proj.subtitle}</CardSubtitle>
                   <CardDesc>
                     {/* brief intro paragraph, if any */}
-                    {proj.desc && <p style={{ margin: "0.4em 0" }}>{proj.desc}</p>}
+                    {proj.desc && (
+                      <p
+                        style={{ margin: "0.4em 0" }}
+                        dangerouslySetInnerHTML={{ __html: proj.desc }}
+                      />
+                    )}
 
                     {/* bullet list */}
                     {proj.bullets && (

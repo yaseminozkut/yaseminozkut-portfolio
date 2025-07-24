@@ -25,14 +25,16 @@ const AboutSkillsSection = () => {
               href="https://u.osu.edu/pcvlab/"
               target="_blank"
               rel="noopener noreferrer"
+              style={{ color: "#4400e6", textDecoration: "underline" }}
             >
-              PCVLab&nbsp;
+              PCVLab
             </StyledLink>
-            as a GRA, under the supervision of&nbsp;
+            &nbsp;as a GRA, under the supervision of&nbsp;
             <StyledLink
               href="https://ceg.osu.edu/people/yilmaz.15"
               target="_blank"
               rel="noopener noreferrer"
+              style={{ color: "#4400e6", textDecoration: "underline" }}
             >
               Alper Yilmaz
             </StyledLink>.

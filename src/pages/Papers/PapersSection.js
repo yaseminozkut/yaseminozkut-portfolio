@@ -35,8 +35,8 @@ const paperList = [
         </a>
       </>
     ),
-    desc:
-      "Led writing the paper and data-split tooling, while collaborating with a colleague who supplied the initial Lightning-Hydra codebase.",
+    desc: "Contributed extensively to the paper and experimentation phase, collaborating with a colleague who adapted the initial <a href='https://github.com/ashleve/lightning-hydra-template' style={{ color: '#4400e6', textDecoration: 'underline' }} target='_blank'>Lightning-Hydra</a> codebase.",
+
     bullets: [
       "Drafted the <b>Overleaf manuscript</b> and conducted a comprehensive <b>literature review</b> using papers provided by our clinician co-author, Dr. Adhikari.",
       "Authored the <b>Background</b> and <b>Related Work</b> sections; contributed to writing all remaining sections.",
@@ -132,7 +132,12 @@ export default function PapersSection() {
                   <CardSubtitle>{proj.subtitle}</CardSubtitle>
                   <CardDesc>
                     {/* brief intro paragraph, if any */}
-                    {proj.desc && <p style={{ margin: "0.4em 0" }}>{proj.desc}</p>}
+                    {proj.desc && (
+                      <p
+                        style={{ margin: "0.4em 0" }}
+                        dangerouslySetInnerHTML={{ __html: proj.desc }}
+                      />
+                    )}
 
                     {/* bullet list */}
                     {proj.bullets && (

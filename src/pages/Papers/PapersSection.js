@@ -18,7 +18,7 @@ const paperList = [
     cover: eyeCover,
     video: eyeVideo,
     title: "ERDES: A Benchmark Dataset for Retinal Detachment Classification in Spatiotemporal Ocular Ultrasound",
-    github: "https://github.com/OSUPCVLab/ERDES-3D",
+    github: "https://github.com/OSUPCVLab/ERDES",
     subtitle: (
       <>
         Pouyan Navard, <b>Yasemin Ozkut</b>, Srikar Adhikari, Alper Yilmaz
@@ -26,7 +26,7 @@ const paperList = [
         <i>Nature Scientific Data 2025 (Soon)</i>
         <br />
         <a
-          href="https://osupcvlab.github.io/ERDES-3D/"
+          href="https://osupcvlab.github.io/ERDES/"
           target="_blank"
           rel="noopener noreferrer"
           style={{ color: "#4400e6", textDecoration: "underline" }}
@@ -46,7 +46,7 @@ const paperList = [
     ],
 
     footnote:
-      "Acknowledgement – Pouyan Navard provided the original Lightning-Hydra template, baseline models (T, UNETR, SwinUNETR, V-Net, UNet++, SENet154, 3D ResNet, and 3D UNet), dataset, and pipeline."
+      "Acknowledgement – Pouyan Navard provided the original Lightning-Hydra template, baseline models (ViT, UNETR, SwinUNETR, V-Net, UNet++, SENet154, 3D ResNet, and 3D UNet), dataset, and pipeline."
   },
 ];
 

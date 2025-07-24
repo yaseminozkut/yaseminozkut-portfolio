@@ -50,6 +50,7 @@ const AboutSkillsSection = () => {
               <StyledCircle>YOLO</StyledCircle>
               <StyledCircle>OpenCV</StyledCircle>
               <StyledCircle>Hugging Face</StyledCircle>
+              <StyledCircle>Unsloth</StyledCircle>
               <StyledCircle>Pandas</StyledCircle>
               <StyledCircle>NumPy</StyledCircle>
               <StyledCircle>Scikit-learn</StyledCircle>
@@ -61,7 +62,8 @@ const AboutSkillsSection = () => {
               <StyledCircle>Multi-modal Learning</StyledCircle>
               <StyledCircle>Computer Vision</StyledCircle>
               <StyledCircle>Vision-Language Models</StyledCircle>
-              
+              <StyledCircle>Prompt Engineering & AI-Assisted Coding</StyledCircle> 
+              <StyledCircle>OOP</StyledCircle> 
             </Cols>
         </Right>
       </StyledContainer>

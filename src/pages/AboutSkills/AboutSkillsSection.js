@@ -37,15 +37,7 @@ const AboutSkillsSection = () => {
               Alper Yilmaz
             </StyledLink>.
             My background is in Computer Science and Engineering (Sabanci University).
-            Currently I'm implementing multi-modal model for generating medical reports from X-rays. Additionally, my team is preparing to compete in&nbsp;
-            <StyledLink
-              href="https://www.nasa-beyond-challenge.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              NASA's Beyond the Algorithm Challenge
-            </StyledLink>
-            , tackling flood analysis using satellite imagery with neuromorphic computing. On the side, I'm exploring agentic LLMs (LangChain, LangGraph) and building AI-powered iOS apps with friends. I love picking up new topics and enjoy both independent and team projects.
+            Currently, I'm researching multi-modal learning and vision-language models. Outside of my research, I enjoy exploring agentic LLM frameworks (e.g., LangChain, LangGraph) and building AI-powered projects. I love picking up new topics and enjoy both independent and team projects.
           </StyledText>
         </Left>
         <Right id="skills">

@@ -10,9 +10,8 @@ import { FaGithub } from "react-icons/fa";
 import daiLabVideo from "../../img/dai-labor-demo.mp4";
 import daiLabCover from "../../img/dai-labor-cover.png";
 import chestCover from "../../img/chest-cover.png";
-import floodCover from "../../img/flood.jpg";
 import reidCover from "../../img/reid_cover.png";
-import reidVideo from "../../img/reid_video.mov";
+import reidVideo from "../../img/reid_video.mp4";
 
 const projectList = [
   {
@@ -35,16 +34,13 @@ const projectList = [
     title: "LLM-Driven Person Tracking & Re-Identification (ReID) via LangGraph (Ongoing)",
     subtitle: "Personal Project",
     desc:
-      "Building a GPU-powered, <b>LangGraph</b>-orchestrated pipeline that <b>detects, tracks, and re-identifies</b> people across multiple videos—then leverages <b>vision-language embeddings</b> and <b>LLM reasoning</b> to link identities.",
+      "Building a GPU-powered, <b>LangGraph</b>-orchestrated pipeline that <b>detects, tracks, and re-identifies</b> people across a video—then leverages <b>LLM reasoning</b> to link identities.",
     bullets: [
-      "Designed <b>LangGraph</b> workflow with persistent identity memory and tool-calling nodes.",
-      "Implemented a <b>YOLOv8 + ByteTrack</b> tool that crops each detected person and tags them with per-frame local IDs.",
-      "Built CLIP embedder that extracts vision features from person crops.",
-      "Implemented a memory store of {global_id, embedding} objects, enabling fast lookup across frames.",
-      "Using embedding-similarity matching to assign global IDs or create new ones.",
-      "Building parallel branches that route crops to <b>CLIP</b> embedder and <b>MoonDream</b> VLM captioner.",
-      "Implementing <b>LLM agent (Mistral-7B via Ollama)</b> that reasons over descriptions to shortlist candidates.",
-      "Building a <b>Gradio</b> UI for interactive inference."
+      "Designed a <b>LangGraph</b> workflow to orchestrate detection, cropping, description, and ID matching.",
+      "Integrated a <b>YOLOv8</b> detector to extract and crop person bounding boxes from each video frame.",
+      "Used <b>Qwen2.5-VL-3B-Instruct</b> to generate rich, structured descriptions (e.g., clothing, hair, accessories) from cropped images.",
+      "Built a persistent memory store of <code>{global_id, description}</code> entries for identity tracking.",
+      "Implemented an <b>LLM agent (Qwen2.5-7B-Instruct)</b> to reason over descriptions and assign global IDs or create new ones.",
     ],
   },
   {
@@ -61,31 +57,6 @@ const projectList = [
     ],
     imageCredit: "Image Credit: Figure 1 from Johnson et al., MIMIC‑CXR, a de‑identified publicly available database of chest radiographs with free‑text reports, Scientific Data 6:317 (2019). Licensed under CC BY 4.0."
   },
-  {
-    cover: floodCover,
-    video: null,
-    title: "NASA / Beyond the Algorithm Challenge (Ongoing)",
-    subtitle: "PCVLab, OSU",
-    imageCredit: "Image Credit: NASA / Beyond the Algorithm Challenge",
-    desc: "We are participating in NASA’s Beyond the Algorithm Challenge, focused on applying unconventional computing methods to improve rapid flood impact assessment.",
-    bullets: [
-      "Our work explores <b>satellite data</b> and scalable model design for <b>real-world disaster response</b>.",
-      "Due to the ongoing nature of the competition, technical details will be shared after final submissions."
-    ], 
-    footnote: (
-      <span> Challenge website:{" "}
-              <a
-                href="https://www.nasa-beyond-challenge.org/"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ color: "#4400e6", textDecoration: "underline" }}
-              >
-                https://www.nasa-beyond-challenge.org
-              </a>
-            </span>
-    )
-  }
-
 ];
 
 // Utility to check for mobile

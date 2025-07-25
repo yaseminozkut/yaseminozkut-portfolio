@@ -53,19 +53,21 @@ const AboutSkillsSection = () => {
               <StyledCircle>OpenCV</StyledCircle>
               <StyledCircle>Hugging Face</StyledCircle>
               <StyledCircle>Unsloth</StyledCircle>
+              <StyledCircle>Pytorch Lightning + Hydra</StyledCircle>
               <StyledCircle>Pandas</StyledCircle>
               <StyledCircle>NumPy</StyledCircle>
               <StyledCircle>Scikit-learn</StyledCircle>
               <StyledCircle>Git</StyledCircle>
               <StyledCircle>SLURM</StyledCircle>
               <StyledCircle>Linux (CLI)</StyledCircle>
+              <StyledCircle>OOP</StyledCircle> 
+              <StyledCircle>AI-Assisted Coding</StyledCircle> 
+              <StyledCircle>Prompt Engineering</StyledCircle> 
               <StyledCircle>Deep/Machine Learning</StyledCircle>
               <StyledCircle>Distributed Training</StyledCircle>
               <StyledCircle>Multi-modal Learning</StyledCircle>
               <StyledCircle>Computer Vision</StyledCircle>
               <StyledCircle>Vision-Language Models</StyledCircle>
-              <StyledCircle>Prompt Engineering & AI-Assisted Coding</StyledCircle> 
-              <StyledCircle>OOP</StyledCircle> 
             </Cols>
         </Right>
       </StyledContainer>

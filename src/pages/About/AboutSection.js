@@ -56,7 +56,7 @@ const About = () => (
             </a>
           </IconLink>
           <IconLink>
-            <a href="yaseminozkut_resume.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="Yasemin_Ozkut_Resume.pdf" target="_blank" rel="noopener noreferrer">
               <TbFileCv style={{ color: "#ececec" }} />
             </a>
           </IconLink>

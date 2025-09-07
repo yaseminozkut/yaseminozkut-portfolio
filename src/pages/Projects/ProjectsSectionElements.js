@@ -177,7 +177,7 @@ export const CardSubtitle = styled.div`
 `;
 
 export const CardDesc = styled.div`
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-family: 'Roboto', Verdana, Helvetica, Arial, sans-serif;
   color: #555;
   margin-top: 0.5em;

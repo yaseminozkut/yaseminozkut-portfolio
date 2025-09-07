@@ -20,32 +20,34 @@ const AboutSkillsSection = () => {
         <Left id="about">
           <StyledTitle>About Me</StyledTitle>
           <StyledText>
-            I'm a second-year M.S. student in Electrical and Computer Engineering at The Ohio State University, working on deep learning and multi-modal learning models in&nbsp;
+            I'm a second-year M.S. student in Electrical and Computer Engineering at The Ohio State University. I worked on deep learning and multi-modal learning models at&nbsp;
             <StyledLink
               href="https://u.osu.edu/pcvlab/"
               target="_blank"
               rel="noopener noreferrer"
+              style={{ color: "#4400e6", textDecoration: "underline" }}
             >
-              PCVLab&nbsp;
+              PCVLab
             </StyledLink>
-            as a GRA, under the supervision of&nbsp;
+            &nbsp;as a GRA, under the supervision of&nbsp;
             <StyledLink
               href="https://ceg.osu.edu/people/yilmaz.15"
               target="_blank"
               rel="noopener noreferrer"
+              style={{ color: "#4400e6", textDecoration: "underline" }}
             >
               Alper Yilmaz
-            </StyledLink>.
-            My background is in Computer Science and Engineering (Sabanci University).
-            Currently I'm implementing multi-modal model for generating medical reports from X-rays. Additionally, my team is preparing to compete in&nbsp;
+            </StyledLink>. Currently, I am interning as AI Engineer at&nbsp; 
             <StyledLink
-              href="https://www.nasa-beyond-challenge.org/"
+              href="https://ubihere.com/"
               target="_blank"
               rel="noopener noreferrer"
+              style={{ color: "#4400e6", textDecoration: "underline" }}
             >
-              NASA's Beyond the Algorithm Challenge
-            </StyledLink>
-            , tackling flood analysis using satellite imagery with neuromorphic computing. On the side, I'm exploring agentic LLMs (LangChain, LangGraph) and building AI-powered iOS apps with friends. I love picking up new topics and enjoy both independent and team projects.
+              Ubihere
+            </StyledLink>, working on LLMs and agentic framework (e.g., LangChain, LangGraph).
+            My background is in Computer Science and Engineering (Sabanci University).
+            Additionally, I'm researching multi-modal learning and vision-language models. Beyond my research and internship, I enjoy keeping up with cutting-edge AI developments and building hands-on AI projects. I love picking up new topics and enjoy both independent and team projects.
           </StyledText>
         </Left>
         <Right id="skills">
@@ -58,18 +60,24 @@ const AboutSkillsSection = () => {
               <StyledCircle>YOLO</StyledCircle>
               <StyledCircle>OpenCV</StyledCircle>
               <StyledCircle>Hugging Face</StyledCircle>
+              <StyledCircle>Unsloth</StyledCircle>
+              <StyledCircle>Pytorch Lightning + Hydra</StyledCircle>
               <StyledCircle>Pandas</StyledCircle>
               <StyledCircle>NumPy</StyledCircle>
               <StyledCircle>Scikit-learn</StyledCircle>
               <StyledCircle>Git</StyledCircle>
               <StyledCircle>SLURM</StyledCircle>
               <StyledCircle>Linux (CLI)</StyledCircle>
+              <StyledCircle>OOP</StyledCircle> 
+              <StyledCircle>AI-Assisted Coding</StyledCircle> 
+              <StyledCircle>Prompt Engineering</StyledCircle> 
               <StyledCircle>Deep/Machine Learning</StyledCircle>
               <StyledCircle>Distributed Training</StyledCircle>
+              <StyledCircle>Agents</StyledCircle>
               <StyledCircle>Multi-modal Learning</StyledCircle>
               <StyledCircle>Computer Vision</StyledCircle>
+              <StyledCircle>LLMs</StyledCircle>
               <StyledCircle>Vision-Language Models</StyledCircle>
-              
             </Cols>
         </Right>
       </StyledContainer>

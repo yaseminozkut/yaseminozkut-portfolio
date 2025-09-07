@@ -23,7 +23,7 @@ const paperList = [
       <>
         Pouyan Navard, <b>Yasemin Ozkut</b>, Srikar Adhikari, Alper Yilmaz
         <br />
-        <i>Nature Scientific Data 2025 (Soon)</i>
+        <i>Nature Scientific Data 2025 (Submitted - In review)</i>
         <br />
         <a
           href="https://osupcvlab.github.io/ERDES/"
@@ -32,6 +32,15 @@ const paperList = [
           style={{ color: "#4400e6", textDecoration: "underline" }}
         >
           Project page
+        </a>
+        &nbsp;|&nbsp;
+        <a
+          href="https://huggingface.co/datasets/pnavard/erdes"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: "#4400e6", textDecoration: "underline" }}
+        >
+          Hugging Face
         </a>
       </>
     ),

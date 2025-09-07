@@ -20,7 +20,7 @@ const AboutSkillsSection = () => {
         <Left id="about">
           <StyledTitle>About Me</StyledTitle>
           <StyledText>
-            I'm a second-year M.S. student in Electrical and Computer Engineering at The Ohio State University, working on deep learning and multi-modal learning models in&nbsp;
+            I'm a second-year M.S. student in Electrical and Computer Engineering at The Ohio State University. I worked on deep learning and multi-modal learning models at&nbsp;
             <StyledLink
               href="https://u.osu.edu/pcvlab/"
               target="_blank"
@@ -37,9 +37,17 @@ const AboutSkillsSection = () => {
               style={{ color: "#4400e6", textDecoration: "underline" }}
             >
               Alper Yilmaz
-            </StyledLink>.
+            </StyledLink>. Currently, I am interning as AI Engineer at&nbsp; 
+            <StyledLink
+              href="https://ubihere.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#4400e6", textDecoration: "underline" }}
+            >
+              Ubihere
+            </StyledLink>, working on LLMs and agentic framework (e.g., LangChain, LangGraph).
             My background is in Computer Science and Engineering (Sabanci University).
-            Currently, I'm researching multi-modal learning and vision-language models. Outside of my research, I enjoy exploring agentic LLM frameworks (e.g., LangChain, LangGraph) and building AI-powered projects. I love picking up new topics and enjoy both independent and team projects.
+            Additionally, I'm researching multi-modal learning and vision-language models. Beyond my research and internship, I enjoy keeping up with cutting-edge AI developments and building hands-on AI projects. I love picking up new topics and enjoy both independent and team projects.
           </StyledText>
         </Left>
         <Right id="skills">
@@ -65,8 +73,10 @@ const AboutSkillsSection = () => {
               <StyledCircle>Prompt Engineering</StyledCircle> 
               <StyledCircle>Deep/Machine Learning</StyledCircle>
               <StyledCircle>Distributed Training</StyledCircle>
+              <StyledCircle>Agents</StyledCircle>
               <StyledCircle>Multi-modal Learning</StyledCircle>
               <StyledCircle>Computer Vision</StyledCircle>
+              <StyledCircle>LLMs</StyledCircle>
               <StyledCircle>Vision-Language Models</StyledCircle>
             </Cols>
         </Right>

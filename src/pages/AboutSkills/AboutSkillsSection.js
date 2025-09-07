@@ -37,7 +37,7 @@ const AboutSkillsSection = () => {
               style={{ color: "#4400e6", textDecoration: "underline" }}
             >
               Alper Yilmaz
-            </StyledLink>. Currently, I am interning as AI Engineer at&nbsp; 
+            </StyledLink>. Currently, I am a full time AI Engineer Intern at&nbsp; 
             <StyledLink
               href="https://ubihere.com/"
               target="_blank"

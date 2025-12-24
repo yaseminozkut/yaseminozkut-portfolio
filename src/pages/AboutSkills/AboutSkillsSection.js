@@ -20,7 +20,17 @@ const AboutSkillsSection = () => {
         <Left id="about">
           <StyledTitle>About Me</StyledTitle>
           <StyledText>
-            I'm a second-year M.S. student in Electrical and Computer Engineering at The Ohio State University. I worked on deep learning and multi-modal learning models at&nbsp;
+            I'm a second-year MS student in Electrical and Computer Engineering at The Ohio State University, with a BS in Computer Science and Engineering from Sabanci University. My focus is on  multimodal learning, vision-language models, and computer vision. Currently, I'm a full-time Computer Vision Engineer Intern at&nbsp;
+            <StyledLink
+              href="https://ubihere.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#4400e6", textDecoration: "underline" }}
+            >
+              Ubihere
+            </StyledLink>
+            ,&nbsp;building person re-identification systems for multi-camera tracking. I'm also developing an intelligent dashboard that learns customer camera environments.
+            I worked on deep learning and multi-modal learning models at&nbsp; Previously, I worked on medical imaging research at&nbsp;
             <StyledLink
               href="https://u.osu.edu/pcvlab/"
               target="_blank"
@@ -37,17 +47,9 @@ const AboutSkillsSection = () => {
               style={{ color: "#4400e6", textDecoration: "underline" }}
             >
               Alper Yilmaz
-            </StyledLink>. Currently, I am a full time AI Engineer Intern at&nbsp; 
-            <StyledLink
-              href="https://ubihere.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: "#4400e6", textDecoration: "underline" }}
-            >
-              Ubihere
-            </StyledLink>, working on LLMs and agentic framework (e.g., LangChain, LangGraph).
+            </StyledLink>, with a paper in revision at Nature Scientific Data.
             My background is in Computer Science and Engineering (Sabanci University).
-            Additionally, I'm researching multi-modal learning and vision-language models. Beyond my research and internship, I enjoy keeping up with cutting-edge AI developments and building hands-on AI projects. I love picking up new topics and enjoy both independent and team projects.
+            I'm passionate about bridging research and production—turning experimental models into deployable systems. Seeking full-time AI/ML roles starting May 2026.
           </StyledText>
         </Left>
         <Right id="skills">
@@ -68,6 +70,10 @@ const AboutSkillsSection = () => {
               <StyledCircle>Git</StyledCircle>
               <StyledCircle>SLURM</StyledCircle>
               <StyledCircle>Linux (CLI)</StyledCircle>
+              <StyledCircle>Flask</StyledCircle>
+              <StyledCircle>Docker</StyledCircle>
+              <StyledCircle>REST API</StyledCircle>
+              <StyledCircle>LangGraph</StyledCircle>
               <StyledCircle>OOP</StyledCircle> 
               <StyledCircle>AI-Assisted Coding</StyledCircle> 
               <StyledCircle>Prompt Engineering</StyledCircle> 

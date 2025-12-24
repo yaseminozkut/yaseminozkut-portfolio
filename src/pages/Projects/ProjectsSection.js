@@ -23,7 +23,7 @@ const projectList = [
     desc:
       "Built a real-time object detection system for German supermarket products using YOLOv8m and webcam input. The system is designed to eventually guide users to the correct storage locations based on recognized items in the kitchen.",
     bullets: [
-      "Collected and annotated the the Freiburg Groceries Dataset and augmented it via <b>Roboflow</b>",
+      "Collected and annotated the Freiburg Groceries Dataset and augmented it via <b>Roboflow</b>",
       "Achieved <b>87.2% accuracy</b> with <b>YOLOv8m</b> model",
       "Experimented with a <b>Keras-OCR</b> pipeline I implemented to interpret German-labeled packaging",
     ],
@@ -47,7 +47,7 @@ const projectList = [
   {
     cover: chestCover,
     video: null,
-    title: "Chest X-Ray VLM (Ongoing)",
+    title: "Chest X-Ray VLM",
     subtitle: "PCVLab, OSU",
     desc:
       "Developing a multimodal vision-language model (VLM) for automatic chest X-ray interpretation and clinical-report generation by learning joint image–text representations from the MIMIC-CXR dataset.",

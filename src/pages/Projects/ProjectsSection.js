@@ -31,11 +31,11 @@ const projectList = [
   {
     cover: reidCover,
     video: reidVideo,
-    title: "LLM-Driven Person Tracking & Re-Identification (ReID) via LangGraph",
+    title: "Agentic Person Re-Identification (ReID) via LangGraph and Vision-Language Reasoning",
     github: "https://github.com/yaseminozkut/semantic-reid-tracker-vlm-qwen",
     subtitle: "Personal Project",
     desc:
-      "Building a GPU-powered, <b>LangGraph</b>-orchestrated pipeline that <b>detects, tracks, and re-identifies</b> people across a video—then leverages <b>LLM reasoning</b> to link identities.",
+      "Built a GPU-powered, <b>LangGraph</b>-orchestrated pipeline that <b>detects, tracks, and re-identifies</b> people across a video—then leverages <b>LLM reasoning</b> to link identities.",
     bullets: [
       "Designed a <b>LangGraph</b> workflow to orchestrate detection, cropping, description, and ID matching.",
       "Integrated a <b>YOLOv8</b> detector to extract and crop person bounding boxes from each video frame.",

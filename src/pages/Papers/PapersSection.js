@@ -21,7 +21,7 @@ const paperList = [
     github: "https://github.com/OSUPCVLab/ERDES",
     subtitle: (
       <>
-        Pouyan Navard, <b>Yasemin Ozkut</b>, Srikar Adhikari, Alper Yilmaz
+        <b>Yasemin Ozkut</b>, Pouyan Navard, Srikar Adhikari, MD, Elaine Situ-LaCasse, MD, Josie Acuña, MD, Adrienne A Yarnish, MD, Alper Yilmaz
         <br />
         <i>Nature Scientific Data 2025 (Submitted - In revisions)</i>
         <br />

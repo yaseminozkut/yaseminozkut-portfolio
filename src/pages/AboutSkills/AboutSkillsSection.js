@@ -29,8 +29,7 @@ const AboutSkillsSection = () => {
             >
               Ubihere
             </StyledLink>
-            ,&nbsp;building person re-identification systems for multi-camera tracking. I'm also developing an intelligent dashboard that learns customer camera environments.
-            I worked on deep learning and multi-modal learning models at&nbsp; Previously, I worked on medical imaging research at&nbsp;
+            ,&nbsp;building person re-identification systems for multi-camera tracking. I'm also developing an intelligent dashboard that learns customer camera environments. Previously, I worked on deep learning and multi-modal learning models at&nbsp;
             <StyledLink
               href="https://u.osu.edu/pcvlab/"
               target="_blank"
@@ -47,7 +46,7 @@ const AboutSkillsSection = () => {
               style={{ color: "#4400e6", textDecoration: "underline" }}
             >
               Alper Yilmaz
-            </StyledLink>, with a paper in revision at Nature Scientific Data.
+            </StyledLink>, with a paper in revision at Nature Scientific Data (benchmark dataset has 6K+ downloads on Hugging Face).
             My background is in Computer Science and Engineering (Sabanci University).
             I'm passionate about bridging research and production—turning experimental models into deployable systems. Seeking full-time AI/ML roles starting May 2026.
           </StyledText>

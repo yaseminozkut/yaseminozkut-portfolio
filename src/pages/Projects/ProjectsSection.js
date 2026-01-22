@@ -12,8 +12,27 @@ import daiLabCover from "../../img/dai-labor-cover.png";
 import chestCover from "../../img/chest-cover.png";
 import reidCover from "../../img/reid_cover.png";
 import reidVideo from "../../img/reid_video.mp4";
+import judgyReachyCover from "../../img/judgy-reachy-cover.png";
+import judgyReachyVideo from "../../img/judgy-reachy-video.mp4";
 
 const projectList = [
+  {
+    cover: judgyReachyCover,
+    video: judgyReachyVideo,
+    title: "Judgy Reachy No Phone",
+    github: "https://github.com/yaseminozkut/judgy_reachy_no_phone",
+    huggingface: "https://huggingface.co/spaces/yozkut/judgy_reachy_no_phone",
+    subtitle: "Personal Project",
+    desc:
+      "",
+    bullets: [
+      "Built a Reachy Mini robot (<b>Hugging Face</b> x <b>Pollen Robotics</b>) app that detects phone usage in real-time and delivers feedback via robot motion and speech.",
+      "It watches you, catches you scrolling on your phone, and gives you a funny shaming response depending on its mood for your phone addiction :) ",
+      "<b>YOLO26</b> nano — the newest model from Ultralytics (just released!) for real-time phone detection with cross-platform GPU support (CUDA/MPS/CPU).",
+      "<b>Groq API</b> — for <b>Llama 3.1-8b-instant</b> model for LLM that generates 8 unique personalities (plus a 9th “pure Reachy” mode using Pollen Robotics’ pre-written emotions and movements library/dataset)",
+      "<b>ElevenLabs</b> — for giving each personality more realistic voice",
+    ],
+  },
   {
     cover: daiLabCover,
     video: daiLabVideo,
@@ -144,6 +163,15 @@ export default function ProjectsSection() {
                     {proj.github &&
                       <GithubIcon href={proj.github} target="_blank" rel="noopener noreferrer">
                         <FaGithub />
+                      </GithubIcon>
+                    }
+                    {proj.huggingface &&
+                      <GithubIcon href={proj.huggingface} target="_blank" rel="noopener noreferrer">
+                        <img
+                          src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg"
+                          alt="Hugging Face"
+                          style={{ width: '1.2em', height: '1.2em' }}
+                        />
                       </GithubIcon>
                     }
                     {proj.tag && <CardTag>{proj.tag}</CardTag>}

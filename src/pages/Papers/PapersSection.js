@@ -17,8 +17,9 @@ const paperList = [
   {
     cover: eyeCover,
     video: eyeVideo,
-    title: "ERDES: A Benchmark Dataset for Retinal Detachment Classification in Spatiotemporal Ocular Ultrasound",
+    title: "ERDES: A Benchmark Video Dataset for Retinal Detachment and Macular Status Classification in Ocular Ultrasound",
     github: "https://github.com/OSUPCVLab/ERDES",
+    huggingface: "https://huggingface.co/datasets/pnavard/erdes",
     subtitle: (
       <>
         <b>Yasemin Ozkut</b>, Pouyan Navard, Srikar Adhikari, MD, Elaine Situ-LaCasse, MD, Josie Acuña, MD, Adrienne A Yarnish, MD, Alper Yilmaz
@@ -32,15 +33,6 @@ const paperList = [
           style={{ color: "#4400e6", textDecoration: "underline" }}
         >
           Project page
-        </a>
-        &nbsp;|&nbsp;
-        <a
-          href="https://huggingface.co/datasets/pnavard/erdes"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ color: "#4400e6", textDecoration: "underline" }}
-        >
-          Hugging Face
         </a>
         &nbsp;|&nbsp;
         <a
@@ -143,6 +135,15 @@ export default function PapersSection() {
                     {proj.github &&
                       <GithubIcon href={proj.github} target="_blank" rel="noopener noreferrer">
                         <FaGithub />
+                      </GithubIcon>
+                    }
+                    {proj.huggingface &&
+                      <GithubIcon href={proj.huggingface} target="_blank" rel="noopener noreferrer">
+                        <img
+                          src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg"
+                          alt="Hugging Face"
+                          style={{ width: '1.2em', height: '1.2em' }}
+                        />
                       </GithubIcon>
                     }
                     {proj.tag && <CardTag>{proj.tag}</CardTag>}

@@ -45,6 +45,15 @@ const About = () => (
       </TextBlock>
       <ActionsStack>
         <IconLinks>
+           <IconLink>
+            <a href="https://huggingface.co/yozkut" target="_blank" rel="noopener noreferrer">
+              <img
+                src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg"
+                alt="Hugging Face"
+                style={{ width: '1em', height: '1em' }}
+              />
+            </a>
+          </IconLink>
           <IconLink>
             <a href="https://github.com/yaseminozkut" target="_blank" rel="noopener noreferrer">
               <FaGithub style={{ color: "#ececec" }} />
